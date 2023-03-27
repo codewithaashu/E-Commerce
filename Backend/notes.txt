@@ -1,0 +1,43 @@
+Here we write the code for backend.
+
+********* Installation *********
+1. Create a package.json file by "npm init" command.
+2. Install express by using "npm i express" command.
+3. Install mongoose by using "npm i mongoose" command.
+
+
+********** What Works have been done in backend *********
+1. Create a server.
+2. Create the router and defines all the route.
+3. Define the controllers for all the route.
+4. Connect to database.
+5. Define the model (collection name, schema)
+6. create the json file 
+7. Insert json file in collection which is created by using model 
+8. when we hit the route then display the json data as response . this is done by controllers
+
+********** ENV File *****************
+It is used to hide private data
+1. Install env by "npm i dotenv"
+2. create a file by name ".env"
+3. Put private data as variable like URL = "something"
+4. To get data in file we have to require by "require("dotenv").config();"
+5. used as "process.env.envVariableName"
+
+
+Note : JSON file and env File do not need to export. it is only export 
+Note : In express, only we require for import like as " const  A = require("path") " and module.exports for export like as "module.exports = {}/moduleName"
+Note : But in react we import like as " import ComponentName from "../componentName" " and export like export default ComponentName
+Note : For sending data from backend to frontend we use cors. Firstly we have to require cors and then use the cors
+const cors = require("cors");//require the cors
+app.use(cors());//use the cors
+
+******* POST Data ********
+1. Create an action on a button. When event is performed on button then api with post method with data will called
+2. Create a route for api with post method will be called with a function.
+3. This function save data in databse 
+4. We have to use two things
+    --> app.use(express.json())
+    --> app.use(express.urlencoded({extended:false}))
+
+
