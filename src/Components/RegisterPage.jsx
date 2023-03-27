@@ -1,9 +1,11 @@
 import axios from 'axios';
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux';
 import { Link, useNavigate} from 'react-router-dom';
 //import component and css for toastify
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { setUser } from '../Redux/Action';
 const RegisterPage = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -13,6 +15,7 @@ const RegisterPage = () => {
     const [select1, setSelect1] = useState(false);
     const [select2, setSelect2] = useState(false);
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     //toast function will fire
     const errorToast = (msg)=>{
         toast.error(msg, {
@@ -26,12 +29,16 @@ const RegisterPage = () => {
             theme: "colored",
         });
     }
-    const successfullyRegister=(phone)=>{
-        sessionStorage.setItem("isLogged",true);
-        sessionStorage.setItem("phone",phone);
+    const successfullyRegister=async(phone)=>{
+        localStorage.setItem("isLogged",true);
+        localStorage.setItem("phone",phone);
+
+        //frontend send request to get user data by phone field  and then backend perform operation and send data of user
+        const user = await axios.get(`http://localhost:5000/product/user/?phone=${phone}`).catch((err)=>{console.log("error is : "+err);})
+        dispatch(setUser(user.data.user));
         navigate("/");
     }
-    const registerData = (e) => {
+    const registerData = async(e) => {
         e.preventDefault();
         if(!email || !password || !phone || !fullName || !gender){
             //toast will be fire at a condition
@@ -39,7 +46,7 @@ const RegisterPage = () => {
         }
         //when we click on submit btn then we send the data(work as postman)
         //for sending data, api with post method will call
-        axios.post("http://localhost:5000/product/register", {
+        await axios.post("http://localhost:5000/product/register", {
             email, password, phone, fullName, gender
         }).then((res) => res.data==="Successfully Registered"?successfullyRegister(phone):errorToast("You are already registered. Login in your account")).catch((err) => console.log("Error is : " + err))
         setEmail("");
@@ -56,7 +63,7 @@ const RegisterPage = () => {
                     <div className="login-head">
                         Create your Account
                     </div>
-                    <form className='form-box' onSubmit={registerData}>
+                    <form className='form-box' autoComplete="off" onSubmit={registerData}>
                         <div className="form-group">
                             <input type="text" name="email" autoComplete='false' placeholder='Email Address' value={email} onChange={(e) => setEmail(e.target.value)} />
                         </div>

@@ -5,7 +5,6 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 const Wishlist = () => {
     const user = useSelector((state)=>state.setUserFunc.user);
-    console.log(user);
   return (
     <>
         <Navbar/>

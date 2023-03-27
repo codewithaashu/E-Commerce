@@ -48,7 +48,7 @@ const LoginPage = () => {
                     <div className="login-head">
                         Login to your account
                     </div>
-                    <form action="" className='form-box' onSubmit={loginData}>
+                    <form action="" className='form-box' autoComplete="off" onSubmit={loginData}>
                         <div className="form-group">
                             <input type="text" name="phone" autoComplete='false' onFocus={() => setFlow1(true)} onBlur={() => !phone?setFlow1(false):setFlow1(true)}  onChange={(e)=>setPhone(e.target.value)}/>
                             <span className={`placeholderText ${flow1 === true ? "focusText" : ""}`}>

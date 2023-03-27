@@ -38,8 +38,8 @@ const registeredUser = async (req, res) => {
             email, password, phone, fullName, gender,tokens:{token:token}
         })
         //save user
-        const data = await user.save();
-        res.send("Successfully Registered");
+        await user.save();
+        res.send(user);
     }
     catch (err) {
         console.log("Error :" + err);
@@ -76,20 +76,14 @@ const addWishlist = async(req,res)=>{
             //get the user collection using token
             const user = await Users.findOne({phone:token});
             
-            //check whether the product is already in wishlist product array or not
-            if(user.wishlistProduct.length==0){
-                console.log(user.wishlistProduct.length);
-                user.wishlistProduct = product;
-            }
-            else if(!user.wishlistProduct.some((curr)=>{return curr._id===product._id})){
+            if(!user.wishlistProduct.some((curr)=>{return curr._id===product._id})){
                 //if product is not in array
                 //add product in user's wishlistProduct array
                 user.wishlistProduct=user.wishlistProduct.concat(product);
                 // //update the user collection
             }
             await user.save();
-            console.log(user);
-            res.send("added");
+            res.send(user);
         }
     }catch(err){
         console.log("Error : "+err);
@@ -112,7 +106,7 @@ const addToCart = async(req,res)=>{
                 // //update the user collection
                 await user.save();
             }
-            res.send("added");
+            res.send(user);
         }
     }catch(err){
         console.log("Error : "+err);

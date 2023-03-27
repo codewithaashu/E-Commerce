@@ -25,7 +25,6 @@ const WishlistPage = () => {
       return async() => {
         const user = await axios.get(`http://localhost:5000/product/user/?phone=${localStorage.getItem("phone")}`).catch((err)=>{console.log("error is : "+err);})
         dispatch(setUser(user.data.user));
-        console.log(user);
       }
     },[user.wishlistProduct.length])
     const removeToWishlist = async(_id)=>{

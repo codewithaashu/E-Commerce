@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
-    const data = useSelector((state)=>state.setUserFunc.user)
+    const data = useSelector((state)=>state.setUserFunc.user);
     return (
         <>
             <nav className="navbar navbar-expand-lg sticky-top" style={{padding:"0px"}}>
