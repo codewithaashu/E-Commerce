@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { setUser } from '../Redux/Action';
+import Swal from 'sweetalert2'
 const AddToBagPage = () => {
   const user = useSelector((state) => state.setUserFunc.user);
   const dispatch = useDispatch();
@@ -18,6 +19,13 @@ const AddToBagPage = () => {
       _id: _id,
       phone: localStorage.getItem("phone")
     }).catch((err) => console.log(err));
+    dispatch(setUser(res.data));
+  }
+  const placedOrder = async()=>{
+    Swal.fire('Your order is successfully Placed');
+    const res =await axios.post("http://localhost:5000/product/placedOrder",{
+      phone:localStorage.getItem("phone")
+    }).catch((err)=>console.log(err))
     dispatch(setUser(res.data));
   }
   return (
@@ -119,7 +127,7 @@ const AddToBagPage = () => {
             <span className="price-value">{`Rs. ${(totalMRP-discount).toFixed(2)}`}</span>
           </div>
           <div className='mt-4'>
-            <button className="place-order-btn">Place Order
+            <button className="place-order-btn" onClick={placedOrder}>Place Order
             </button>
           </div>
         </div>

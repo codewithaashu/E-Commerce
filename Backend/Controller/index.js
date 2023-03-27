@@ -132,5 +132,13 @@ const updateBag= async(req,res)=>{
     await user.save();
     res.send(user);
 }
+const placedOrderBag= async(req,res)=>{
+    const {phone}= req.body;
+    //get user collection by using phone field
+    const user = await Users.findOne({phone:phone});
+    user.addToCartProduct = [];
+    await user.save();
+    res.send(user);
+}
 //export the controller
-module.exports = { getAllProduct, registeredUser,loginUser,addWishlist,addToCart,getUserData,updateWishlist,updateBag };
+module.exports = { getAllProduct, registeredUser,loginUser,addWishlist,addToCart,getUserData,updateWishlist,updateBag,placedOrderBag };
