@@ -140,5 +140,30 @@ const placedOrderBag= async(req,res)=>{
     await user.save();
     res.send(user);
 }
+// const getSearchItem = async(req,res)=>{
+//     //get data which comes from frontend
+//     var searchQuery = req.params.name;
+//     //get corresponding result from db
+//     //if any one letter will be match
+//     searchQuery = new RegExp(searchQuery,'i');
+//     const product = await Product.find({title:searchQuery});
+//     res.send(product);
+// }
+
+const getSearchItem = async(req,res)=>{
+    console.log(req.params.key)
+    //get data which comes from frontend
+    var searchQuery = new RegExp(req.params.key,'i');
+    //get data from db corresponding to search query
+    //search query can be a title or category
+    const product = await Product.find({
+        "$or":[
+            {"title":{$regex:searchQuery}},
+            {"category":{$regex:searchQuery}}
+        ]
+    })
+    console.log(product);
+    res.send(product);
+}
 //export the controller
-module.exports = { getAllProduct, registeredUser,loginUser,addWishlist,addToCart,getUserData,updateWishlist,updateBag,placedOrderBag };
+module.exports = { getAllProduct, registeredUser,loginUser,addWishlist,addToCart,getUserData,updateWishlist,updateBag,placedOrderBag,getSearchItem };

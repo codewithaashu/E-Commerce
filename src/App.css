@@ -11,8 +11,6 @@
   background-color: #fff;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
   max-height: 14vh;
-  /* position: fixed; */
-  /* z-index: 10; */
 }
 
 .li-text {
@@ -23,6 +21,13 @@
   font-weight: 500;
   text-transform: uppercase;
 }
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link:hover{
+  color: black !important;
+}
 
 .myntra-logo {
   width: 53px;
@@ -30,6 +35,141 @@
   background-color: #fff;
 }
 
+.loginBtn_container{
+  font-size: 16px;
+  position: relative;
+}
+.nav-hover :hover{
+  border-bottom: 4px solid #ff3e6c;
+}
+.login_menu{
+  position: absolute;
+  top:60px;
+  height: max-content;
+  width: 100%;
+  width: 280px;
+  margin-left: -40px;
+  transform: translateX(-25%);
+  display: none;
+  padding-top: 15px;
+  z-index:12;
+  padding: 25px 20px 15px;
+  border: 1px solid #f5f5f6;
+  color: #3e4152;
+  box-shadow: 0 1px 10px rgba(0,0,0,.08);
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 1;
+}
+.content-info{
+  display: block;
+  padding-bottom: 2px;
+}
+.nav-infoTitle{
+  font-size: 14px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 10px;
+  font-weight: 600;
+  height: 20px;
+}
+.nav-infoSubTitle{
+  height: 14px;
+color: #282c3f;
+font-size: 12px;
+width: 100%;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+line-height: 10px;
+}
+.nav-btn{
+  display: inline-block;
+width: 100%;
+padding: 10px 0;
+border: none;
+}
+
+.nav-login-btn{
+  display: inline-block;
+padding: 18px 20px;
+margin: 10px 10px 0 0;
+border: 1px solid #eaeaec;
+border-radius: 2px;
+text-align: center;
+text-transform: uppercase;
+font-size: 14px;
+color: #ff3f6c;
+font-weight: 700;
+text-decoration: none;
+background-color: transparent;
+margin: 0 5px 6px 0;
+}
+.link1 :hover{
+  color:#ff3f6c !important;
+}
+.nav-popup-list-box{
+  display: inline-block;
+width: 100%;
+padding: 10px 0;
+border-top: 1px solid #eaeaec;
+/* pointer-events: none; */
+}
+.nav-popup-list{
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #3e4152;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.nav-popup-list:hover{
+  font-weight: 600;
+  color:#3e4152;
+}
+.loginBtn_container:hover .login_menu{
+  display: block;
+}
+.login_menu_list{
+  height: 100%;
+  max-width: 100%;
+  background-color: white;
+  box-shadow: -5px -0px 5px rgba(0,0,0,0.1),
+  5px 5px 5px rgba(0,0,0,0.1);
+  padding: 5px 20px;
+  font-size: 15px;
+  
+}
+.login_menu_top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.login_menu_top a:hover{
+  text-decoration: underline;
+}
+.menu_nav_link{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+.menu_nav_link a{
+  padding-top: 10px;
+  font-size: 14px;
+  display: flex;
+}
+.menu_nav_link a p{
+  padding-left: 10px;
+  color:#474545;
+  font-weight: 500;
+}
+.menu_nav_icon{
+  width: 15px;
+} 
 .icon-box {
   display: flex;
   flex-direction: column;
@@ -492,10 +632,7 @@ span {
   margin: 30px 0 10px 0;
 }
 
-.link {
-  text-decoration: none;
-  color: black;
-}
+
 
 .reset {
   cursor: pointer;
@@ -503,9 +640,6 @@ span {
   font-weight: 700;
 }
 
-.link:hover {
-  color: #ff3f6c;
-}
 
 .placeholderText {
   position: relative;

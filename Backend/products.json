@@ -274,5 +274,17 @@
         "rate": 4.2,
         "count": "115"
       }
+    },
+    {
+      "id": 24,
+      "title": "Women Gorgeous Green Solid One-Shoulder Dress",
+      "price": 1420,
+      "description": "Look like a diva when you slip into this sophisticated dress. Boasting an attractive one-shoulder, this dress is also designed with a sleeveless design for a complete look. ",
+      "category": "women's clothing",
+      "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16542548/2022/2/14/f466952d-8a52-404d-be2b-668ec574c3341644838520725UFWomenGorgeousGreenSolidOne-ShoulderDress3.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": "550"
+      }
     }
   ]

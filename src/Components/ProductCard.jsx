@@ -11,7 +11,7 @@ const ProductCard = ({ data }) => {
           return (
             <div className="col card-box" key={_id}>
               <div className="card" style={{ width: "220px", maxHeight: "500px" }}>
-                <Link to={`/products/${id}`} className='link'>
+                <Link className='link' to={`/products/${id}`} >
                   <div className="img-box">
                     <img src={image} className="card-img-top" alt="Shirt Photo" style={{ height: "280px", width: "100%" }} />
                     <div className="rating-box">
