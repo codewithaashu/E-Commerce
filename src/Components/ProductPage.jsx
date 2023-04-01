@@ -7,6 +7,7 @@ import Spinner from './Spinner';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { setUser } from '../Redux/Action';
+import Footer from './Footer';
 const ProductPage = () => {
     const productDetails = useSelector((state) => state.fetchProductDetailsFunc.product);
     const dispatch = useDispatch();
@@ -78,104 +79,107 @@ const ProductPage = () => {
             {productDetails.length === 0 ? (
                 <Spinner />
             ) : (
-                <div className="container-fluid mt-5">
-                    <div className="row pdp-cont">
-                        <div className="col-12 col-sm-12 col-md-6 col-lg-6 product-image-box">
-                            <img className='px-2' src={productDetails.image} alt="Product Pic" style={{ height: "90%", width: "90%" }} />
-                        </div>
-                        <div className="col-12 col-sm-12 col-md-6 col-lg-6 content-box px-3">
-                            <div className="product-detail-box">
-                                <h1 className='pdp-title'>Roadster</h1>
-                                <h1 className='pdp-name'>{productDetails.title}</h1>
+                <>
+                    <div className="container-fluid mt-5">
+                        <div className="row pdp-cont">
+                            <div className="col-12 col-sm-12 col-md-6 col-lg-6 product-image-box">
+                                <img className='px-2' src={productDetails.image} alt="Product Pic" style={{ height: "90%", width: "90%" }} />
                             </div>
-                            <div className="pdp-price">
-                                <strong>Rs. {productDetails.price}</strong><span className='mp-price'>MRP {productDetails.price * 5}</span> <span className='discount'>(58% off)</span>
-                                <div className='pt-2'>
-                                    <p className='pdf-info'>inclusive of all taxes</p>
+                            <div className="col-12 col-sm-12 col-md-6 col-lg-6 content-box px-3">
+                                <div className="product-detail-box">
+                                    <h1 className='pdp-title'>Roadster</h1>
+                                    <h1 className='pdp-name'>{productDetails.title}</h1>
                                 </div>
-                            </div>
-                            <div className="size-container">
-                                <div className="size-text">
-                                    <h4 className='size'>Select Size</h4>
-                                    <h1 className='size-chart'>Size chart</h1>
+                                <div className="pdp-price">
+                                    <strong>Rs. {productDetails.price}</strong><span className='mp-price'>MRP {productDetails.price * 5}</span> <span className='discount'>(58% off)</span>
+                                    <div className='pt-2'>
+                                        <p className='pdf-info'>inclusive of all taxes</p>
+                                    </div>
                                 </div>
-                                <div className="size-option mb-3" >
-                                    {
-                                        size.map((curr, index) => {
-                                            return (
-                                                <div className="size-circle" key={index}>
-                                                    <h4 className='size-circle-text'>{curr}</h4>
-                                                </div>
-                                            )
-                                        })
+                                <div className="size-container">
+                                    <div className="size-text">
+                                        <h4 className='size'>Select Size</h4>
+                                        <h1 className='size-chart'>Size chart</h1>
+                                    </div>
+                                    <div className="size-option mb-3" >
+                                        {
+                                            size.map((curr, index) => {
+                                                return (
+                                                    <div className="size-circle" key={index}>
+                                                        <h4 className='size-circle-text'>{curr}</h4>
+                                                    </div>
+                                                )
+                                            })
 
-                                    }
+                                        }
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="pdp-action-container">
-                                <div className="addToBag">
-                                    <button className='addToBag-btn' onClick={addToCart}><i className="fa-solid fa-bag-shopping"  ></i>ADD TO BAG</button>
-                                    <button className='wishlist-btn' onClick={addWishlist}><i className="fa-regular fa-heart" style={{ color: "black" }}></i>
-                                        <span>WISHLIST</span></button>
+                                <div className="pdp-action-container">
+                                    <div className="addToBag">
+                                        <button className='addToBag-btn' onClick={addToCart}><i className="fa-solid fa-bag-shopping"  ></i>ADD TO BAG</button>
+                                        <button className='wishlist-btn' onClick={addWishlist}><i className="fa-regular fa-heart" style={{ color: "black" }}></i>
+                                            <span>WISHLIST</span></button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="pincode-service-box" style={{ marginTop: "30px" }}>
-                                <div className="pincode-cont">
-                                    <h4 className='pincode-head'>DELIVERY OPTIONS
-                                        <i className="fa-solid fa-truck-fast" style={{ color: "black", marginLeft: "5px" }}></i>
+                                <div className="pincode-service-box" style={{ marginTop: "30px" }}>
+                                    <div className="pincode-cont">
+                                        <h4 className='pincode-head'>DELIVERY OPTIONS
+                                            <i className="fa-solid fa-truck-fast" style={{ color: "black", marginLeft: "5px" }}></i>
+                                        </h4>
+                                        <form autoComplete='off' className='mt-3'>
+                                            <input type="text" placeholder='Enter pincode' className='pincode-field' name='pincode' />
+                                            <input type="submit" className='pincode-check' value={'check'} />
+                                        </form>
+                                        <p className='pincode-info'>Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+                                    </div>
+                                </div>
+                                <div className="service-info-box">
+                                    <ul>
+                                        {
+                                            serviceInfo.map((curr, index) => {
+                                                return (
+                                                    <li key={index}>
+                                                        {curr}
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                                <div className="product-details-box" style={{border:"none"}}>
+                                    <h4 className='pdp-details-title'>
+                                        PRODUCT DETAILS
+                                        <i className="far fa-file-alt" style={{ marginLeft: "6px" }}></i>
                                     </h4>
-                                    <form autoComplete='off' className='mt-3'>
-                                        <input type="text" placeholder='Enter pincode' className='pincode-field' name='pincode' />
-                                        <input type="submit" className='pincode-check' value={'check'} />
-                                    </form>
-                                    <p className='pincode-info'>Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
-                                </div>
-                            </div>
-                            <div className="service-info-box">
-                                <ul>
-                                    {
-                                        serviceInfo.map((curr, index) => {
-                                            return (
-                                                <li key={index}>
-                                                    {curr}
-                                                </li>
-                                            )
-                                        })
-                                    }
-                                </ul>
-                            </div>
-                            <div className="product-details-box">
-                                <h4 className='pdp-details-title'>
-                                    PRODUCT DETAILS
-                                    <i className="far fa-file-alt" style={{ marginLeft: "6px" }}></i>
-                                </h4>
-                                <p className="pdp-details-description">
-                                    {productDetails.description}
-                                </p>
-                                <div className="pdp-sizeFitBox">
-                                    <h4 className="pdp-sizeFit-title">
-                                        Size & Fit
-                                    </h4>
-                                    <p className="pdp-sizeFit-description">
-                                        Regular Fit
-                                        <br />
-                                        The model (height 6') is wearing a size 40
+                                    <p className="pdp-details-description">
+                                        {productDetails.description}
                                     </p>
-                                </div>
-                                <div className="pdp-sizeFitBox">
-                                    <h4 className="pdp-sizeFit-title">
-                                        Material & Care
-                                    </h4>
-                                    <p className="pdp-sizeFit-description">
-                                        100% cotton
-                                        <br />
-                                        Machine-wash
-                                    </p>
+                                    <div className="pdp-sizeFitBox">
+                                        <h4 className="pdp-sizeFit-title">
+                                            Size & Fit
+                                        </h4>
+                                        <p className="pdp-sizeFit-description">
+                                            Regular Fit
+                                            <br />
+                                            The model (height 6') is wearing a size 40
+                                        </p>
+                                    </div>
+                                    <div className="pdp-sizeFitBox" >
+                                        <h4 className="pdp-sizeFit-title">
+                                            Material & Care
+                                        </h4>
+                                        <p className="pdp-sizeFit-description">
+                                            100% cotton
+                                            <br />
+                                            Machine-wash
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <Footer />
+                </>
             )}
             <ToastContainer />
         </>

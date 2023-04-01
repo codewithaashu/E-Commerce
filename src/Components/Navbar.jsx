@@ -92,7 +92,7 @@ const Navbar = () => {
                                         </div>
                                     </div>
                                     <div className="nav-btn">
-                                        <Link className='nav-login-btn link'to={"/login"} onClick={user.length!=0?navBtn:""}>
+                                        <Link className='nav-login-btn  'to={"/login"} onClick={user.length!=0?navBtn:""}>
                                         {user.length===0?"Login/Signup":`Logout`}</Link>
                                     </div>
                                     <div className="nav-popup-list-box">
@@ -119,6 +119,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
+            <ToastContainer/>
         </>
     )
 }

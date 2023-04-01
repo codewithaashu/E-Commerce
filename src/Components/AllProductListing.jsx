@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchAllProducts } from '../Redux/Action';
 import axios from 'axios';
 import Spinner from './Spinner';
+import Footer from './Footer';
 const ProductListing = () => {
   const dispatch = useDispatch();
 
@@ -30,7 +31,10 @@ const ProductListing = () => {
     <>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 cols-lg-6 mt-5">
         {
-          storeData.length===0 ? <Spinner/> : <ProductCard data={storeData} />
+          storeData.length === 0 ? <Spinner /> : <>
+            <ProductCard data={storeData} />
+            <Footer />
+          </>
 
         }
       </div>

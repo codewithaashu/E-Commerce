@@ -69,11 +69,11 @@ const LoginPage = () => {
                     </form>
                     <div className="forgot">
                         Forgot your password?&nbsp;
-                        <Link to="/" className="reset link">Reset Here</Link>
+                        <Link to="/" className="reset">Reset Here</Link>
                     </div>
                     <div className="forgot" style={{ marginTop: "20px" }}>
                         New to Myntra?&nbsp;
-                        <Link to="/register" className="reset link">Create an account</Link>
+                        <Link to="/register" className="reset">Create an account</Link>
                     </div>
                 </div>
             </div>

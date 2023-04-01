@@ -92,7 +92,7 @@ padding: 10px 0;
 border: none;
 }
 
-.nav-login-btn{
+.nav-btn a{
   display: inline-block;
 padding: 18px 20px;
 margin: 10px 10px 0 0;
@@ -107,15 +107,11 @@ text-decoration: none;
 background-color: transparent;
 margin: 0 5px 6px 0;
 }
-.link1 :hover{
-  color:#ff3f6c !important;
-}
 .nav-popup-list-box{
   display: inline-block;
 width: 100%;
 padding: 10px 0;
 border-top: 1px solid #eaeaec;
-/* pointer-events: none; */
 }
 .nav-popup-list{
   display: block;
@@ -632,12 +628,11 @@ span {
   margin: 30px 0 10px 0;
 }
 
-
-
-.reset {
+.forgot a{
   cursor: pointer;
   color: #ff3f6c;
   font-weight: 700;
+  text-decoration: none;
 }
 
 
@@ -1120,4 +1115,126 @@ span {
   .addToBag-right-block{
     margin-left: 0px;
   }
+}
+
+/* footer */
+.footer-box{
+  width: 100%;
+  background-color: #FAFBFC;
+}
+#mainbox{
+  margin-top: 60px !important;
+  padding-bottom: 60px !important;
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin: auto;
+}
+
+
+#mainbox .box1{
+  width: 20%;
+  height: 100%;
+
+}
+#mainbox .box2{
+  width: 20%;
+  height: 100%;
+}
+
+#mainbox .box3{
+  width: 30%;
+  height: 100%;
+} 
+
+#mainbox .box4{
+  width: 25%;
+  height: 100%;
+}
+#footerDiv{
+  width: 100%;
+  height: auto;
+  background-color: #fafbfc;
+  margin-top:150px;
+ 
+}
+
+
+
+h5{
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: -10px;
+}
+
+.box1 a{
+  display: block;
+  color:#696b79;
+  font-size: 15px;
+  text-decoration: none;
+  padding-bottom: 5px;
+  cursor: pointer;
+  line-height: normal;
+  margin-top: 10px;
+  display:inline;
+}
+
+
+
+#new{
+  border-radius: 4px;
+  background-color: hotpink;
+  color: white;
+ 
+}
+.box2 a{
+  display: block;
+  color:#696b79;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.logo1{
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.logo2{
+  width: 20px;
+  height: 20px;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.l1r1{
+  display: flex;
+  color: #989898;
+}
+.l1r1 img{
+  display: block;
+  margin-top: 10px;
+  width: 48px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.l1r1 p{
+  margin-left: 15px;
+  color:#696b79;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.l1r1 span{
+  color: black;
+  font-weight: bold;
+
 }

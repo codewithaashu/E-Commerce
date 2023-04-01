@@ -5,8 +5,8 @@ import ProductListing from './Components/AllProductListing';
 const App = () => {
   return (
     <>
-      <Navbar/>
-      <ProductListing/>
+      <Navbar />
+      <ProductListing />
     </>
   )
 }
