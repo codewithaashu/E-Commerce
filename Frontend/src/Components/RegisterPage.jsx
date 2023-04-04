@@ -48,7 +48,7 @@ const RegisterPage = () => {
         //for sending data, api with post method will call
         await axios.post("http://localhost:5000/product/register", {
             email, password, phone, fullName, gender
-        }).then((res) => res.data==="Successfully Registered"?successfullyRegister(phone):errorToast("You are already registered. Login in your account")).catch((err) => console.log("Error is : " + err))
+        }).then((res) => res.data==="Already Registered"?errorToast("You are already registered. Login in your account"):successfullyRegister(phone)).catch((err) => console.log("Error is : " + err))
         setEmail("");
         setPassword("");
         setPhone("");
