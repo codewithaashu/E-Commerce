@@ -1,290 +1,798 @@
 [
-    {
-      "id": 1,
-      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-      "price": 109.95,
-      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-      "rating": {
-        "rate": 3.9,
-        "count": 120
-      }
-    },
-    {
-      "id": 2,
-      "title": "Mens Casual Premium Slim Fit T-Shirts ",
-      "price": 22.3,
-      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-      "rating": {
-        "rate": 4.1,
-        "count": 259
-      }
-    },
-    {
-      "id": 3,
-      "title": "Mens Cotton Jacket",
-      "price": 55.99,
-      "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-      "rating": {
-        "rate": 4.7,
-        "count": 500
-      }
-    },
-    {
-      "id": 4,
-      "title": "Mens Casual Slim Fit",
-      "price": 15.99,
-      "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
-      "rating": {
-        "rate": 2.1,
-        "count": 430
-      }
-    },
-    {
-      "id": 5,
-      "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-      "price": 695,
-      "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-      "category": "jewelery",
-      "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-      "rating": {
-        "rate": 4.6,
-        "count": 400
-      }
-    },
-    {
-      "id": 6,
-      "title": "Solid Gold Petite Micropave ",
-      "price": 168,
-      "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-      "category": "jewelery",
-      "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-      "rating": {
-        "rate": 3.9,
-        "count": 70
-      }
-    },
-    {
-      "id": 7,
-      "title": "White Gold Plated Princess",
-      "price": 9.99,
-      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
-      "category": "jewelery",
-      "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
-      "rating": {
-        "rate": 3,
-        "count": 400
-      }
-    },
-    {
-      "id": 8,
-      "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
-      "price": 10.99,
-      "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
-      "category": "jewelery",
-      "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
-      "rating": {
-        "rate": 1.9,
-        "count": 100
-      }
-    },
-    {
-      "id": 9,
-      "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
-      "price": 64,
-      "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
-      "category": "electronics",
-      "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
-      "rating": {
-        "rate": 3.3,
-        "count": 203
-      }
-    },
-    {
-      "id": 10,
-      "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
-      "price": 109,
-      "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
-      "category": "electronics",
-      "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
-      "rating": {
-        "rate": 2.9,
-        "count": 470
-      }
-    },
-    {
-      "id": 11,
-      "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
-      "price": 109,
-      "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
-      "category": "electronics",
-      "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
-      "rating": {
-        "rate": 4.8,
-        "count": 319
-      }
-    },
-    {
-      "id": 12,
-      "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
-      "price": 114,
-      "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
-      "category": "electronics",
-      "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
-      "rating": {
-        "rate": 4.8,
-        "count": 400
-      }
-    },
-    {
-      "id": 13,
-      "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
-      "price": 599,
-      "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
-      "category": "electronics",
-      "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
-      "rating": {
-        "rate": 2.9,
-        "count": 250
-      }
-    },
-    {
-      "id": 14,
-      "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
-      "price": 999.99,
-      "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
-      "category": "electronics",
-      "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
-      "rating": {
-        "rate": 2.2,
-        "count": 140
-      }
-    },
-    {
-      "id": 15,
-      "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
-      "price": 56.99,
-      "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
-      "category": "women's clothing",
-      "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
-      "rating": {
-        "rate": 2.6,
-        "count": 235
-      }
-    },
-    {
-      "id": 16,
-      "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
-      "price": 29.95,
-      "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
-      "category": "women's clothing",
-      "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
-      "rating": {
-        "rate": 2.9,
-        "count": 340
-      }
-    },
-    {
-      "id": 17,
-      "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
-      "price": 39.99,
-      "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
-      "category": "women's clothing",
-      "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
-      "rating": {
-        "rate": 3.8,
-        "count": 679
-      }
-    },
-    {
-      "id": 18,
-      "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
-      "price": 9.85,
-      "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
-      "category": "women's clothing",
-      "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
-      "rating": {
-        "rate": 4.7,
-        "count": 130
-      }
-    },
-    {
-      "id": 19,
-      "title": "Opna Women's Short Sleeve Moisture",
-      "price": 7.95,
-      "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
-      "category": "women's clothing",
-      "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
-      "rating": {
-        "rate": 4.5,
-        "count": 146
-      }
-    },
-    {
-      "id": 20,
-      "title": "DANVOUY Womens T Shirt Casual Cotton Short",
-      "price": 12.99,
-      "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
-      "category": "women's clothing",
-      "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
-      "rating": {
-        "rate": 3.6,
-        "count": 145
-      }
-    },
-    {
-      "id": 21,
-      "title": "Men Maroon & Navy Blue Checked Pure Cotton Casual Sustainable Shirt",
-      "price": 671,
-      "description": "Maroon and Navy Blue checked casual shirt, has a spread collar, long sleeves, button placket, curved hem, and 1 patch pocket",
-      "category": "men's clothing",
-      "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9951411/2019/8/5/a4ff349b-5bf5-41c6-a623-a684d94af3c91565006161838-Roadster-Men-Shirts-8701565006159466-3.jpg",
-      "rating": {
-        "rate": 4.2,
-        "count": 160
-      }
-    },
-    {
-      "id": 22,
-      "title": "Men Pink Slim Fit Casual Shirt",
-      "price": 599,
-      "description": "Pink solid casual shirt, has a spread collar, long sleeves, curved hem, one patch pocket",
-      "category": "men's clothing",
-      "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7488102/2019/8/22/8002a744-0dad-4dbb-9481-cf0090134c3b1566454086786-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-1.jpg",
-      "rating": {
-        "rate": 4.1,
-        "count": 176
-      }
-    },
-    {
-      "id": 23,
-      "title": "Men Olive Green Slim Fit Casual Shirt",
-      "price": 599,
-      "description": "Olive green solid casual shirt, has a spread collar, long sleeves, curved hem, one patch pocket",
-      "category": "men's clothing",
-      "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7488103/2019/8/22/acfba45f-8f9c-4b97-b5bc-a909418bdf4c1566454100620-Dennis-Lingo-Men-Green-Slim-Fit-Solid-Casual-Shirt-358156645-3.jpg",
-      "rating": {
-        "rate": 4.2,
-        "count": "115"
-      }
-    },
-    {
-      "id": 24,
-      "title": "Women Gorgeous Green Solid One-Shoulder Dress",
-      "price": 1420,
-      "description": "Look like a diva when you slip into this sophisticated dress. Boasting an attractive one-shoulder, this dress is also designed with a sleeveless design for a complete look. ",
-      "category": "women's clothing",
-      "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16542548/2022/2/14/f466952d-8a52-404d-be2b-668ec574c3341644838520725UFWomenGorgeousGreenSolidOne-ShoulderDress3.jpg",
-      "rating": {
-        "rate": 4.5,
-        "count": "550"
-      }
-    }
+  {
+    "index": 0,
+    "category":"mens",
+    "brand": "Roadster",
+    "title": "Men Blue & Beige Regular Fit Checked Sustainable Casual Shirt",
+    "subTitle": "Men Regular Fit Casual Shirt",
+    "originalPrice": 1699,
+    "discountPercentage": "(60% OFF)",
+    "discountedPrice": 679,
+    "rating": 3.8737714290618896,
+    "ratingCount": 5799,
+    "searchImage": "http://assets.myntassets.com/assets/images/6849354/2022/2/9/cc41bfc1-55f8-47df-a705-d5a05b286a871644388786288-Roadster-Men-Blue--Beige-Regular-Fit-Checked-Casual-Shirt-88-1.jpg",
+    "isFeatured":true
+},
+{
+  "index": 1,
+  "category":"mens",
+  "brand": "HERE&NOW",
+  "title": "Men Black Slim Fit Casual Shirt",
+  "subTitle": "Slim Fit Casual Shirt",  
+  "originalPrice": 1899,
+  "discountPercentage": "(Rs. 1200 OFF)",
+  "discountedPrice": 699,
+  "rating": 4.3038129806518555,
+  "ratingCount": 2439,
+  "searchImage": "http://assets.myntassets.com/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg",
+  "isFeatured":true
+},{
+  "index": 2,
+  "category":"mens",
+  "brand": "Dennis Lingo",
+  "title": "Men Blue Slim Fit Windowpane Checked Casual Shirt",
+  "subTitle": "Men Slim Fit Casual Shirt",
+  "originalPrice": 2499,
+  "discountPercentage": "(Rs. 1878 OFF)",
+  "discountedPrice": 621,
+  "rating": 4.235500812530518,
+  "ratingCount": 2276,
+  "searchImage": "http://assets.myntassets.com/assets/images/14572050/2022/2/3/f7390b3d-ae00-4cfa-92b2-e0c8ec36a1a11643873057427-Dennis-Lingo-Men-Blue-Slim-Fit-Windowpane-Checked-Casual-Shi-1.jpg",
+  "isFeatured":true
+},{
+  "index": 3,
+  "category":"mens",
+  "brand": "HIGHLANDER",
+  "title": "Men White Slim Fit Casual Shirt",
+  "subTitle": "Men Slim Fit Casual Shirt",
+  "originalPrice": 1099,
+  "discountPercentage": "(52% OFF)",    
+  "discountedPrice": 527,
+  "rating": 4.1740570068359375,
+  "ratingCount": 9359,
+  "searchImage": "http://assets.myntassets.com/assets/images/2050688/2018/2/5/11517823120338-HIGHLANDER-Men-White-Slim-Fit-Solid-Casual-Shirt-5911517823120124-1.jpg",
+  "isFeatured":true
+},{
+  "index": 4,
+  "category":"mens",
+  "brand": "Roadster",
+  "title": "Men Pack Of 2 Sustainable Shirts",
+  "subTitle": "Men Pack Of 2 Shirts",   
+  "originalPrice": 2099,
+  "discountPercentage": "(60% OFF)",    
+  "discountedPrice": 839,
+  "rating": 4.168915748596191,
+  "ratingCount": 6299,
+  "searchImage": "http://assets.myntassets.com/assets/images/2038071/2019/4/9/ace5c891-0717-485c-8080-9c37c5c759821554799993054-Roadster-Men-Black--White-Slim-Fit-Solid-Casual-Shirt-322155-1.jpg",
+  "isFeatured":true
+},
+{
+  "index": 6,
+  "category": "mens",
+  "brand": "HIGHLANDER",
+  "title": "Men Green & White Slim Fit Printed Casual Shirt",
+  "subTitle": "Slim Fit Casual Shirt",  
+  "originalPrice": 1049,
+  "discountPercentage": "(44% OFF)",    
+  "discountedPrice": 587,
+  "rating": 4.258476257324219,
+  "ratingCount": 16841,
+  "searchImage": "http://assets.myntassets.com/assets/images/11780968/2022/11/21/57eb174b-cbf1-4d1e-906c-dd87fcfb059d1669021381999-HIGHLANDER-Men-Green--White-Slim-Fit-Printed-Casual-Shirt-27-1.jpg",
+  "isFeatured": true
+},
+{
+  "index": 5,
+  "category":"mens",
+  "brand": "Dennis Lingo",
+  "title": "Men Pink Slim Fit Casual Shirt",
+  "subTitle": "Men Slim Fit Casual Shirt",
+  "originalPrice": 1849,
+  "discountPercentage": "(Rs. 1280 OFF)",
+  "discountedPrice": 569,
+  "rating": 4.11545991897583,
+  "ratingCount": 17859,
+  "searchImage": "http://assets.myntassets.com/assets/images/7488102/2019/8/22/8002a744-0dad-4dbb-9481-cf0090134c3b1566454086786-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-1.jpg",
+  "isFeatured":true
+},{
+  "index": 7,
+  "category": "mens",
+  "brand": "Roadster",
+  "title": "Men Black & Red Yarn Dyed Checked Casual Sustainable Shirt",
+  "subTitle": "Yarn Dyed Checked Casual Shirt",
+  "originalPrice": 1299,
+  "discountPercentage": "(60% OFF)",    
+  "discountedPrice": 519,
+  "rating": 4.3044233322143555,
+  "ratingCount": 5742,
+  "searchImage": "http://assets.myntassets.com/assets/images/8889501/2019/3/19/6fa08c94-8835-4963-a84b-4f18bcd46e781552979698271-Roadster-Men-Black--Red-Regular-Fit-Checked-Casual-Shirt-135-1.jpg",
+  "isFeatured": true
+},{
+  "index": 8,
+  "category": "mens",
+  "brand": "HERE&NOW",
+  "title": "Men White Regular Fit Solid Sustainable Casual Shirt",
+  "subTitle": "Men Regular Fit Sustainable Casual Shirt",
+  "originalPrice": 1899,
+  "discountPercentage": "(Rs. 900 OFF)",        
+  "discountedPrice": 999,
+  "rating": 4.334216117858887,
+  "ratingCount": 5287,
+  "searchImage": "http://assets.myntassets.com/assets/images/4425878/2018/5/11/935ce5fa-3571-4d63-8a41-32507c34fb771526040411112-HERENOW-Men-White-Regular-Fit-Solid-Casual-Shirt-261526040410974-1.jpg",
+  "isFeatured": true
+},{
+  "index": 9,
+  "category": "mens",
+  "brand": "Dennis Lingo",
+  "title": "Men Olive Green Slim Fit Casual Shirt",
+  "subTitle": "Men Slim Fit Casual Shirt",
+  "originalPrice": 1849,
+  "discountPercentage": "(Rs. 1259 OFF)",
+  "discountedPrice": 590,
+  "rating": 4.182182312011719,
+  "ratingCount": 11730,
+  "searchImage": "http://assets.myntassets.com/assets/images/7488103/2019/8/22/acfba45f-8f9c-4b97-b5bc-a909418bdf4c1566454100620-Dennis-Lingo-Men-Green-Slim-Fit-Solid-Casual-Shirt-358156645-3.jpg",
+  "isFeatured": true
+},{
+  "index": 10,
+  "category": "mens",
+  "brand": "Roadster",
+  "title": "Men Blue Printed Casual Sustainable Shirt",
+  "subTitle": "Printed Casual Shirt",   
+  "originalPrice": 1499,
+  "discountPercentage": "(58% OFF)",    
+  "discountedPrice": 629,
+  "rating": 4.081624984741211,
+  "ratingCount": 31853,
+  "searchImage": "http://assets.myntassets.com/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg",
+  "isFeatured": true
+},{
+  "index": 11,
+  "category": "mens",
+  "brand": "HIGHLANDER",
+  "title": "Men White & Sea Green Slim Fit Striped Casual Shirt",
+  "subTitle": "Men Slim Fit Casual Shirt",
+  "originalPrice": 1149,
+  "discountPercentage": "(54% OFF)",    
+  "discountedPrice": 528,
+  "rating": 4.130644798278809,
+  "ratingCount": 11803,
+  "searchImage": "http://assets.myntassets.com/assets/images/2347551/2019/12/3/fb88c67b-d735-48cc-8554-9374a95ba35b1575363237983-HIGHLANDER-Men-White--Light-Blue-Slim-Fit-Striped-Casual-Shi-1.jpg",
+  "isFeatured": true
+},{
+  "index": 12,
+  "category": "mens",
+  "brand": "HERE&NOW",
+  "title": "Men White Slim Fit Printed Casual Shirt",
+  "subTitle": "Slim Fit Casual Shirt",  
+  "originalPrice": 1899,
+  "discountPercentage": "(60% OFF)",    
+  "discountedPrice": 759,
+  "rating": 4.235882759094238,
+  "ratingCount": 1399,
+  "searchImage": "http://assets.myntassets.com/assets/images/19140996/2022/7/16/6634490b-5122-47b9-b8d5-6883d4ecea2a1657972357555Shirts1.jpg",
+  "isFeatured": true
+},{
+  "index": 13,
+  "category": "mens",
+  "brand": "Campus Sutra",
+  "title": "Men White & Blue Striped Casual Shirt",
+  "subTitle": "Striped Casual Shirt",   
+  "originalPrice": 1499,
+  "discountPercentage": "(43% OFF)",    
+  "discountedPrice": 854,
+  "rating": 4.234457969665527,
+  "ratingCount": 3587,
+  "searchImage": "http://assets.myntassets.com/assets/images/14811424/2021/7/26/d5ffc4e7-f447-4df1-b417-9ac68372cd6e1627300540761-Campus-Sutra-Men-Shirts-6941627300540022-1.jpg",        "isFeatured": true
+},{
+  "index": 14,
+  "category": "mens",
+  "brand": "Roadster",
+  "title": "Men Black & White Checked Pure Cotton Casual Sustainable Shirt",
+  "subTitle": "Men Cotton Casual Shirt",        "originalPrice": 1499,
+  "discountPercentage": "(60% OFF)",    
+  "discountedPrice": 599,
+  "rating": 4.345470428466797,
+  "ratingCount": 17330,
+  "searchImage": "http://assets.myntassets.com/assets/images/8889611/2019/3/20/3eae8fb4-b7ca-4e01-80bf-d1e59ab1568d1553080254589-Roadster-Men-Black--White-Regular-Fit-Checked-Casual-Shirt-9-1.jpg",
+  "isFeatured": true
+},{
+  "index": 15,
+  "category": "mens",
+  "brand": "HIGHLANDER",
+  "title": "Men White & Blue Slim Fit Checked Casual Shirt",
+  "subTitle": "Men Slim Fit Shirt",     
+  "originalPrice": 1249,
+  "discountPercentage": "(58% OFF)",    
+  "discountedPrice": 524,
+  "rating": 4.215386390686035,
+  "ratingCount": 9151,
+  "searchImage": "http://assets.myntassets.com/assets/images/8469259/2019/12/3/08d63a46-a0f1-4d6b-9eea-9e476fce7c4e1575377853407-HIGHLANDER-by-Rohit-Sharma-Men-White--Blue-Slim-Fit-Checked--1.jpg",
+  "isFeatured": true
+},{
+  "index": 16,
+  "category": "mens",
+  "brand": "Louis Philippe",
+  "title": "Men Black Solid Classic Fit Formal Pure Cotton Shirt",
+  "subTitle": "Men Formal Shirt",       
+  "originalPrice": 2199,
+  "discountPercentage": "(40% OFF)",    
+  "discountedPrice": 1319,
+  "rating": 4.1875,
+  "ratingCount": 160,
+  "searchImage": "http://assets.myntassets.com/assets/images/17858286/2022/4/27/de94e44a-68e9-4703-a9b7-0367c3232d571651036115975-Louis-Philippe-Men-Shirts-7701651036115394-1.jpg",
+  "isFeatured": true
+},{
+  "index": 17,
+  "category": "mens",
+  "brand": "HERE&NOW",
+  "title": "Men Black Slim Fit Printed Casual Shirt",
+  "subTitle": "Men Slim Fit Casual Shirt",
+  "originalPrice": 1899,
+  "discountPercentage": "(Rs. 1100 OFF)",
+  "discountedPrice": 799,
+  "rating": 4.158595561981201,
+  "ratingCount": 826,
+  "searchImage": "http://assets.myntassets.com/assets/images/19818626/2022/9/6/58f05554-c9c1-4de8-8214-6965a0a9d5771662465111841Shirts1.jpg",
+  "isFeatured": true
+},{
+  "index": 18,
+  "category": "mens",
+  "brand": "Roadster",
+  "title": "Men Navy & Grey Checked Casual Sustainable Shirt",
+  "subTitle": "Cotton Checked Casual Shirt",
+  "originalPrice": 1399,
+  "discountPercentage": "",
+  "discountedPrice": 1399,
+  "rating": 4.246843338012695,
+  "ratingCount": 5781,
+  "searchImage": "http://assets.myntassets.com/assets/images/1667044/2019/2/28/2781f021-536a-44ca-bc83-42c456bca95f1551335771557-Roadster-Men-Navy--Grey-Checked-Casual-Shirt-341551335769426-1.jpg",
+  "isFeatured": true
+},{
+  "index": 19,
+  "category": "mens",
+  "brand": "Mast & Harbour",
+  "title": "Men Red & Blue Checked Casual Sustainable Shirt",
+  "subTitle": "Men Casual Sustainable Shirt",
+  "originalPrice": 2399,
+  "discountPercentage": "(57% OFF)",    
+  "discountedPrice": 1031,
+  "rating": 4.3138298988342285,
+  "ratingCount": 6580,
+  "searchImage": "http://assets.myntassets.com/assets/images/2042528/2017/9/28/11506599316866-Mast--Harbour-Men-Red--Blue-Regular-Fit-Checked-Casual-Shirt-7991506599316924-1.jpg",
+  "isFeatured": true
+},{
+  "index": 512,
+  "category": "womens",
+  "brand": "SHEETAL Associates",        
+  "title": "Women Purple Formal A-Line Dress",
+  "subTitle": "Women A-Line Dress",     
+  "originalPrice": 1999,
+  "discountPercentage": "(75% OFF)",    
+  "discountedPrice": 499,
+  "rating": 4.322368621826172,
+  "ratingCount": 152,
+  "searchImage": "http://assets.myntassets.com/assets/images/19499570/2022/8/14/59ea04ba-0fea-4e10-932f-d45f3139521f1660453471955SHEETALAssociatesPurpleA-LineDress1.jpg",        
+  "isFeatured": true
+},{
+  "index": 511,
+  "category": "womens",
+  "brand": "SHEETAL Associates",        
+  "title": "V-Neck Gathered Floral Printed A-Line Midi Dress",
+  "subTitle": "Printed A-Line Midi Dress",
+  "originalPrice": 1999,
+  "discountPercentage": "(60% OFF)",    
+  "discountedPrice": 799,
+  "rating": 4.333333492279053,
+  "ratingCount": 6,
+  "searchImage": "http://assets.myntassets.com/assets/images/21939442/2023/2/11/78fe7b1c-61c4-498e-8971-10452fbb00391676100034510Dresses1.jpg",
+  "isFeatured": true
+},{
+  "index": 510,
+  "category": "womens",
+  "brand": "SHEETAL Associates",        
+  "title": "Maroon Crepe Maxi Dress",   
+  "subTitle": "Crepe Maxi Dress",       
+  "originalPrice": 1999,
+  "discountPercentage": "(68% OFF)",    
+  "discountedPrice": 639,
+  "rating": 3.7926828861236572,
+  "ratingCount": 82,
+  "searchImage": "http://assets.myntassets.com/assets/images/19100470/2022/7/13/4a6ce236-ebd0-462d-8b9a-10290e0e976d1657729178521Dresses1.jpg",
+  "isFeatured": true
+},{
+  "index": 514,
+  "category": "womens",
+  "brand": "SHEETAL Associates",        
+  "title": "Floral Printed V Neck Wrap Dress",
+  "subTitle": "Printed Wrap Dress",     
+  "originalPrice": 1999,
+  "discountPercentage": "(60% OFF)",    
+  "discountedPrice": 799,
+  "rating": 0,
+  "ratingCount": 0,
+  "searchImage": "http://assets.myntassets.com/assets/images/21939408/2023/2/11/e768f3c4-f943-4459-bc95-444f152a4b9c1676100051517Dresses1.jpg",
+  "isFeatured": true
+},{
+  "index": 520,
+  "category": "womens",
+  "brand": "SHEETAL Associates",        
+  "title": "White & Red Floral Crepe Maxi Dress",
+  "subTitle": "Floral Crepe Maxi Dress",        
+  "originalPrice": 1999,
+  "discountPercentage": "(68% OFF)",    
+  "discountedPrice": 639,
+  "rating": 3.9583332538604736,
+  "ratingCount": 120,
+  "searchImage": "http://assets.myntassets.com/assets/images/19732586/2022/8/30/3a234218-eaf9-48b2-bbfb-5e213eb4db2d1661860554200WomenMulticolorStripedCasualBodyconDress1.jpg",  
+  "isFeatured": true
+},{
+  "index": 523,
+  "category": "womens",
+  "brand": "SHEETAL Associates",        
+  "title": "Puff Sleeves Blue Dress",   
+  "subTitle": "Dress",
+  "originalPrice": 1999,
+  "discountPercentage": "(68% OFF)",    
+  "discountedPrice": 639,
+  "rating": 3.9397590160369873,
+  "ratingCount": 83,
+  "searchImage": "http://assets.myntassets.com/assets/images/19062900/2022/7/11/e97b78c3-dcd1-47d0-a88f-d72f13e965441657563440273Dresses1.jpg",
+  "isFeatured": true
+},{
+  "index": 524,
+  "category": "womens",
+  "brand": "SHEETAL Associates",        
+  "title": "Green A-Line Dress",        
+  "subTitle": "A-Line Dress",
+  "originalPrice": 1999,
+  "discountPercentage": "(75% OFF)",    
+  "discountedPrice": 499,
+  "rating": 4.5,
+  "ratingCount": 140,
+  "searchImage": "http://assets.myntassets.com/assets/images/19499568/2022/8/14/d0296e90-9cd2-45a6-b55e-820a8f1f594c1660453630434SHEETALAssociatesGreenA-LineDress1.jpg",
+  "isFeatured": true
+},{
+  "index": 525,
+  "category": "womens",
+  "brand": "SHEETAL Associates",        
+  "title": "Black Dress",
+  "subTitle": "Dress",
+  "originalPrice": 1999,
+  "discountPercentage": "(72% OFF)",    
+  "discountedPrice": 559,
+  "rating": 4.260416507720947,
+  "ratingCount": 192,
+  "searchImage": "http://assets.myntassets.com/assets/images/19499584/2022/8/14/e8b591a9-9109-406f-8c4c-f13bb210ee951660457165525SHEETALAssociatesBlackDress1.jpg",
+  "isFeatured": true
+},{
+  "index": 529,
+  "category": "womens",
+  "brand": "SHEETAL Associates",        
+  "title": "Blue Formal A-Line Dress",  
+  "subTitle": "A-Line Dress",
+  "originalPrice": 1999,
+  "discountPercentage": "(75% OFF)",    
+  "discountedPrice": 499,
+  "rating": 4.157894611358643,
+  "ratingCount": 38,
+  "searchImage": "http://assets.myntassets.com/assets/images/19499566/2022/8/14/ccebd41f-386c-4b2a-a3ec-d43571ede74b1660453717817SHEETALAssociatesBlueA-LineDress1.jpg",
+  "isFeatured": true
+},{
+  "index": 508,
+  "category": "womens",
+  "brand": "Athena",
+  "title": "Women Black Embellished Bling and Sparkly Dress",
+  "subTitle": "Embellished Bling and Sparkly Dress",
+  "originalPrice": 3499,
+  "discountPercentage": "(56% OFF)",    
+  "discountedPrice": 1539,
+  "rating": 4.263157844543457,
+  "ratingCount": 627,
+  "searchImage": "http://assets.myntassets.com/assets/images/16002926/2021/11/22/0029fdf0-95c5-476c-a14a-f49116f5aa911637584092050-Athena-Black-Blingy-mini-party-dress-with-one-sleeve-detail--1.jpg",
+  "isFeatured": true
+},{
+  "index": 515,
+  "category": "womens",
+  "brand": "Inddus",
+  "title": "Women Pretty Pink Floral Embroidered Festive Gown",
+  "subTitle": "Floral Festive Gown",    
+  "originalPrice": 6099,
+  "discountPercentage": "(68% OFF)",    
+  "discountedPrice": 1951,
+  "rating": 4.074358940124512,
+  "ratingCount": 390,
+  "searchImage": "http://assets.myntassets.com/assets/images/16160918/2021/11/25/74680656-8a6b-4be6-82f7-2a097cf88f471637837154545-Inddus-Women-Light-Pink-Net-Ethnic-Motifs-Yoke-Embroidered-M-1.jpg",
+  "isFeatured": true
+},
+{
+  "index": 518,
+  "category": "womens",
+  "brand": "STREET 9",
+  "title": "Red Lace Layered Fit & Flare Dress",
+  "subTitle": "Lace Fit & Flare Dress", 
+  "originalPrice": 1899,
+  "discountPercentage": "(57% OFF)",    
+  "discountedPrice": 816,
+  "rating": 4.397001266479492,
+  "ratingCount": 1534,
+  "searchImage": "http://assets.myntassets.com/assets/images/8694579/2019/2/27/a4ca52e6-d549-4716-9068-b7a573dc80931551251436668-STREET-9-Women-Red-Lace-Bardot-A-Line-Dress-7901551251434966-1.jpg",
+  "isFeatured": true
+},{
+  "index": 502,
+  "category": "womens",
+  "brand": "Saree mall",
+  "title": "Saree Mall Floral Saree",   
+  "subTitle": "Floral Saree",
+  "originalPrice": 3599,
+  "discountPercentage": "(77% OFF)",    
+  "discountedPrice": 827,
+  "rating": 3.8430404663085938,
+  "ratingCount": 3039,
+  "searchImage": "http://assets.myntassets.com/assets/images/16595858/2022/1/21/81124523-6b8d-46f6-a74f-b4fe28a7d3b61642763095101-Saree-Mall-Pink-Organza-Ethnic-Printed-Party-Wear-Saree-with-1.jpg",
+  "isFeatured": true
+},{
+  "index": 503,
+  "category": "womens",
+  "brand": "Fashion Basket",
+  "title": "Floral Net Saree",
+  "subTitle": "Floral Net Saree",       
+  "originalPrice": 1699,
+  "discountPercentage": "(Rs. 1130 OFF)",
+  "discountedPrice": 569,
+  "rating": 0,
+  "ratingCount": 0,
+  "searchImage": "http://assets.myntassets.com/assets/images/21817096/2023/2/2/227fe7f5-4eef-4277-bdf1-2f8cdecb68871675346271167SareeBlouse1.jpg",
+  "isFeatured": true
+},{
+  "index": 521,
+  "category": "womens",
+  "brand": "Mitera",
+  "title": "Solid Saree with Embroidered border",
+  "subTitle": "Solid Saree",
+  "originalPrice": 6999,
+  "discountPercentage": "(78% OFF)",    
+  "discountedPrice": 1539,
+  "rating": 4.1624650955200195,
+  "ratingCount": 357,
+  "searchImage": "http://assets.myntassets.com/assets/images/19813706/2022/9/22/9c4d6c4e-52ba-4851-a0b5-00141f353dda1663848202125-Indian-E-fashion-Designer-saree-9721663848201708-1.jpg",
+  "isFeatured": true
+},{
+  "index": 1000,
+  "category": "electronics",
+  "brand": "boAt",
+  "title": "Wave Select M Smartwatch with 1.69\" Stress Monitoring & Music Control - Black",
+  "subTitle": "Wave Select M Smartwatch",
+  "originalPrice": 5990,
+  "discountPercentage": "(Rs. 4891 OFF)",
+  "discountedPrice": 1099,
+  "rating": 4.2578125,
+  "ratingCount": 256,
+  "searchImage": "http://assets.myntassets.com/assets/images/19401726/2022/8/8/ff0b202f-173b-4a8a-a1fc-bf0bdd4990f01659950603528boAtWaveSelectMSmartwatchwith169StressMonitoringMusicControl1.jpg",
+  "isFeatured": true
+},{
+  "index": 1003,
+  "category": "electronics",
+  "brand": "boAt",
+  "title": "Wave Select M Smartwatch with 1.69\" Stress Monitoring & Music Control - Cherry Blossom",
+  "subTitle": "Wave Select M Smartwatch",
+  "originalPrice": 5990,
+  "discountPercentage": "(Rs. 4891 OFF)",
+  "discountedPrice": 1099,
+  "rating": 4.275640964508057,
+  "ratingCount": 156,
+  "searchImage": "http://assets.myntassets.com/assets/images/19401740/2022/9/10/e64f4f75-cc80-417d-b984-3b7f45b4b7171662801579172-boAt-Wave-Select-M-Smartwatch-with-169-Stress-Monitoring--Mu-1.jpg",
+  "isFeatured": true
+},{
+  "index": 1008,
+  "category": "electronics",
+  "brand": "NOISE",
+  "title": "ColorFit Caliber Go Smart Watch",
+  "subTitle": "ColorFit Caliber Go SmartWatch",
+  "originalPrice": 3999,
+  "discountPercentage": "(Rs. 2700 OFF)",
+  "discountedPrice": 1299,
+  "rating": 4.357142925262451,
+  "ratingCount": 182,
+  "searchImage": "http://assets.myntassets.com/assets/images/21411828/2023/1/5/bcb3a9ed-68b3-4680-97ca-24d093c4ab041672898643541-Noise-ColorFit-Caliber-Go-Smartwatch---Rose-Pink-16216728986-1.jpg",
+  "isFeatured": true
+},{
+  "index": 1020,
+  "category": "electronics",
+  "brand": "NOISE",
+  "title": "Black Color Fit Icon 2 Calling Smartwatch",
+  "subTitle": "Color Fit Icon 2 Smartwatch",
+  "originalPrice": 5999,
+  "discountPercentage": "(Rs. 3700 OFF)",
+  "discountedPrice": 2299,
+  "rating": 4.159733772277832,
+  "ratingCount": 601,
+  "searchImage": "http://assets.myntassets.com/assets/images/20795172/2022/11/21/b8dc17e6-fbc7-42b1-b442-aece2d1b28961669020062930-Noise-ColorFit-Icon-2-Smartwatch---Jet-Black-716166902006248-1.jpg",
+  "isFeatured": true
+},{
+  "index": 1006,
+  "category": "electronics",
+  "brand": "boAt",
+  "title": "Airdopes 402 M TWS Rosegold White Earbuds with Touch Controls Immersive Audio",
+  "subTitle": "Airdopes 402 M TWS Earbuds",
+  "originalPrice": 5990,
+  "discountPercentage": "(Rs. 3991 OFF)",
+  "discountedPrice": 1999,
+  "rating": 3.647773265838623,
+  "ratingCount": 988,
+  "searchImage": "http://assets.myntassets.com/assets/images/11888904/2021/9/29/76841612-695a-48cb-8d75-653a92b2013b1632891507284-boAt-Airdopes-402--Rosegold-White-TWS-Earbuds-with-Touch-Con-1.jpg",
+  "isFeatured": true
+},{
+  "index": 1009,
+  "category": "electronics",
+  "brand": "boAt",
+  "title": "Airdopes Black 163 M with ASAP Charge In the Ear Bluetooth Headset",      
+  "subTitle": "Airdopes 163 M TWS Earbuds",
+  "originalPrice": 2490,
+  "discountPercentage": "(Rs. 1091 OFF)",
+  "discountedPrice": 1399,
+  "rating": 4.2200798988342285,
+  "ratingCount": 4512,
+  "searchImage": "http://assets.myntassets.com/assets/images/19597724/2022/9/16/9798bf0b-dfa3-4bef-966d-ec2d7a39cd5b1663321896091-boAt-Airdopes-Black-163-M-with-ASAP-Charge-In-the-Ear-Blueto-1.jpg",
+  "isFeatured": true
+},{
+  "index": 1013,
+  "category": "electronics",
+  "brand": "boAt",
+  "title": " Black Airdopes 131 M Earbuds",
+  "subTitle": "Airdopes 131 M TWS Earbuds",
+  "originalPrice": 2990,
+  "discountPercentage": "(Rs. 1791 OFF)",
+  "discountedPrice": 1199,
+  "rating": 4.1006646156311035,
+  "ratingCount": 43193,
+  "searchImage": "http://assets.myntassets.com/assets/images/11888942/2022/12/23/22d0b950-306f-4bcc-a1e0-8f623feeadba1671771193272-boAt--Black-Airdopes-131-M-TWS-IWP-Type-C-Port-Earbuds-30416-1.jpg",
+  "isFeatured": true
+},{
+  "index": 1020,
+  "category": "electronics",
+  "brand": "OnePlus",
+  "title": "Nord Buds CE Truly Wireless Bluetooth Headset",
+  "subTitle": "Nord Buds CE Earbuds",   
+  "originalPrice": 2699,
+  "discountPercentage": "(Rs. 400 OFF)",        
+  "discountedPrice": 2299,
+  "rating": 4.177631378173828,
+  "ratingCount": 152,
+  "searchImage": "http://assets.myntassets.com/assets/images/21575906/2023/2/3/9d842e3f-c725-4c9d-aad8-33924d7e5fc41675409321306-OnePlus-Nord-Buds-CE-Truly-Wireless-Bluetooth-Headset-821675-15.jpg",
+  "isFeatured": true
+},{
+  "index": 1025,
+  "category": "electronics",
+  "brand": "OnePlus",
+  "title": "Buds Z2 Bluetooth TWS in Ear Earbuds With ANC & 10 Minutes Flash Charge", 
+  "subTitle": "Buds Z2 Earbuds",        
+  "originalPrice": 5999,
+  "discountPercentage": "(Rs. 1000 OFF)",
+  "discountedPrice": 4999,
+  "rating": 4.583333492279053,
+  "ratingCount": 24,
+  "searchImage": "http://assets.myntassets.com/assets/images/19957598/2022/12/23/d41f5348-936e-4106-9bb5-82f77a41209a1671768349609-OnePlus-Unisex-Headphones-2841671768349410-1.jpg",
+  "isFeatured": true
+},{
+  "index": 1040,
+  "category": "electronics",
+  "brand": "boAt",
+  "title": "Rockerz 370 Buoyant Black Wireless Headphone with Immersive Audio Padded Earcups",
+  "subTitle": "Rockerz 370 M Headphones",
+  "originalPrice": 2499,
+  "discountPercentage": "(Rs. 1300 OFF)",
+  "discountedPrice": 1199,
+  "rating": 4.183293342590332,
+  "ratingCount": 4190,
+  "searchImage": "http://assets.myntassets.com/assets/images/11685868/2021/9/30/1ffdace7-8843-4c35-aaf4-295f8051859e1632978752943-boAt-Rockerz-370-Buoyant-Black-Wireless-Headphone-with-Immer-1.jpg",
+  "isFeatured": true
+},{
+  "index": 1012,
+  "category": "electronics",
+  "brand": "Realme",
+  "title": "Black Buds Wireless 2 Neo with Type-C Fast Charge & Bass Boost Bluetooth Headset- In the Ear",
+  "subTitle": "Buds Wireless 2 Neo",    
+  "originalPrice": 2499,
+  "discountPercentage": "(Rs. 1200 OFF)",
+  "discountedPrice": 1299,
+  "rating": 4.216756820678711,
+  "ratingCount": 3151,
+  "searchImage": "http://assets.myntassets.com/assets/images/15484432/2021/9/21/ccddbedc-1ff2-4378-9789-ed129560db251632211239810-realme-Black-Buds-Wireless-2-Neo-Bluetooth-Headphones-651632-1.jpg",
+  "isFeatured": true
+},{
+  "index": 2001,
+  "category": "kids",
+  "brand": "StyleStone",
+  "title": "Black Sheath Dress",        
+  "subTitle": "Sheath Dress",
+  "originalPrice": 1999,
+  "discountPercentage": "(61% OFF)",    
+  "discountedPrice": 779,
+  "rating": 4.5073747634887695,
+  "ratingCount": 339,
+  "searchImage": "http://assets.myntassets.com/assets/images/20283542/2022/10/6/e00756a2-49b9-4032-b07c-d48668a09ad81664995669425StyleStoneBlackSheathDress1.jpg",
+  "isFeatured": true
+},{
+  "index": 2002,
+  "category": "kids",
+  "brand": "A.T.U.N.",
+  "title": "A T U N Blue Striped Shirt Dress",
+  "subTitle": "Striped Shirt Dress",    
+  "originalPrice": 2499,
+  "discountPercentage": "(60% OFF)",    
+  "discountedPrice": 999,
+  "rating": 4.09375,
+  "ratingCount": 64,
+  "searchImage": "http://assets.myntassets.com/assets/images/21574868/2023/1/16/793c14ab-d526-468c-8f73-9b6644cc4ff11673887346557ATUNBlueStripedShirtDress1.jpg",
+  "isFeatured": true
+},{
+  "index": 2013,
+  "category": "kids",
+  "brand": "Bella Moda",
+  "title": "Maroon & Black Sequinned Net Fit & Flare Dress with Sling Bag",
+  "subTitle": "Girls Sequinned Dress & Bag",
+  "originalPrice": 2157,
+  "discountPercentage": "(76% OFF)",    
+  "discountedPrice": 517,
+  "rating": 4.449021816253662,
+  "ratingCount": 971,
+  "searchImage": "http://assets.myntassets.com/assets/images/14980250/2021/8/10/9570f46f-37a5-4c3f-b3c4-cecdebf05d0f1628595043254-Bella-Moda-Maroon--Black-Dress-2381628595042809-1.jpg",
+  "isFeatured": true
+},{
+  "index": 2014,
+  "category": "kids",
+  "brand": "Pink Chick",
+  "title": "Girls Rose Embellished Ruffled Satin Maxi Party Dress",
+  "subTitle": "Girls Satin Maxi Dress", 
+  "originalPrice": 4300,
+  "discountPercentage": "(54% OFF)",    
+  "discountedPrice": 1978,
+  "rating": 4.345911979675293,
+  "ratingCount": 159,
+  "searchImage": "http://assets.myntassets.com/assets/images/15048512/2021/9/16/565f7f0b-09b6-4b60-9180-d3e5287588261631788131463PinkChickGirlsRoseEmbellishedRuffledSatinMaxiPartyDress1.jpg",
+  "isFeatured": true
+},{
+  "index": 2017,
+  "category": "kids",
+  "brand": "pspeaches",
+  "title": "Off White & Red Floral Printed Chiffon Dress",
+  "subTitle": "Floral Chiffon Dress",   
+  "originalPrice": 1899,
+  "discountPercentage": "(74% OFF)",    
+  "discountedPrice": 493,
+  "rating": 4.244131565093994,
+  "ratingCount": 426,
+  "searchImage": "http://assets.myntassets.com/assets/images/16980018/2022/1/29/c0c3adad-113f-4b3d-8b4c-747ba9bcb3c81643462302051pspeachesOffWhiteFloralChiffonDress1.jpg",       
+  "isFeatured": true
+},{
+  "index": 2032,
+  "category": "kids",
+  "brand": "Bitiya by Bhama",
+  "title": "Floral Net Fit and Flare Maxi Dress",
+  "subTitle": "Floral Net Maxi Dress",  
+  "originalPrice": 4499,
+  "discountPercentage": "(70% OFF)",    
+  "discountedPrice": 1349,
+  "rating": 4.166666507720947,
+  "ratingCount": 18,
+  "searchImage": "http://assets.myntassets.com/assets/images/21418878/2023/1/5/7fcccd36-696c-45b8-84ea-531eeb321cab1672857524677Dresses1.jpg",
+  "isFeatured": true
+},{
+  "index": 2041,
+  "category": "kids",
+  "brand": "Stylo Bug",
+  "title": "Puffed Sleeve Cotton Shirt Dress",
+  "subTitle": "Puffed Sleeve Cotton Dress",
+  "originalPrice": 1498,
+  "discountPercentage": "(55% OFF)",    
+  "discountedPrice": 674,
+  "rating": 4.44444465637207,
+  "ratingCount": 9,
+  "searchImage": "http://assets.myntassets.com/assets/images/21680696/2023/1/24/260de6ff-f3f9-47f3-a88f-730f4c380cf31674542260185GirlsSolidDress-Multicolor6.jpg",
+  "isFeatured": true
+},{
+  "index": 2042,
+  "category": "kids",
+  "brand": "Athena Girl",
+  "title": "Black Tie-Up Neck Sheath Dress",
+  "subTitle": "Sheath Tie-Up Neck Dress",
+  "originalPrice": 2299,
+  "discountPercentage": "(61% OFF)",    
+  "discountedPrice": 896,
+  "rating": 4.226890563964844,
+  "ratingCount": 119,
+  "searchImage": "http://assets.myntassets.com/assets/images/18803106/2022/6/21/8ca69212-ddf9-4511-9daf-7790b544a8511655802618146AthenaGirlBlackMeshYokeDress1.jpg",
+  "isFeatured": true
+},{
+  "index": 3004,
+  "category": "kids",
+  "brand": "HERE&NOW",
+  "title": "Boys Tartan Checks Opaque Pure Cotton Hooded Casual Shirt",
+  "subTitle": "Opaque Cotton Hooded Shirt",
+  "originalPrice": 1999,
+  "discountPercentage": "(70% OFF)",    
+  "discountedPrice": 599,
+  "rating": 0,
+  "ratingCount": 0,
+  "searchImage": "http://assets.myntassets.com/assets/images/21141226/2023/3/29/9e788efe-aa8a-40c6-8d3b-f331ca47c0821680065046650-HERENOW-Boys-Tartan-Checks-Opaque-Pure-Cotton-Hooded-Casual--1.jpg",
+  "isFeatured": true
+},{
+  "index": 3011,
+  "category": "kids",
+  "brand": "H&M",
+  "title": "Boys Cotton Shirt",
+  "subTitle": "Boys Cotton Shirt",      
+  "originalPrice": 799,
+  "discountPercentage": "",
+  "discountedPrice": 799,
+  "rating": 4.615384578704834,
+  "ratingCount": 26,
+  "searchImage": "http://assets.myntassets.com/assets/images/21984462/2023/2/15/3b85400d-032e-424d-b31b-ab0b5fea1a831676451057409Cottonshirt1.jpg",
+  "isFeatured": true
+},{
+  "index": 3039,
+  "category": "kids",
+  "brand": "YK",
+  "title": "Boys Pink & White Pinstriped Casual Shirt",
+  "subTitle": "Boys Pinstriped Casual Shirt",
+  "originalPrice": 1099,
+  "discountPercentage": "(70% OFF)",    
+  "discountedPrice": 329,
+  "rating": 4.107316970825195,
+  "ratingCount": 205,
+  "searchImage": "http://assets.myntassets.com/assets/images/15263500/2022/9/12/2b962551-431a-47ce-9c63-a4f74b128c601662983012526YKBoysPinkWhitePinstripedCasualShirt1.jpg",      
+  "isFeatured": true
+},{
+  "index": 3062,
+  "category": "kids",
+  "brand": "Fame Forever by Lifestyle", 
+  "title": "Boys Tartan Checks Checked Cotton Casual Shirt",
+  "subTitle": "Boys Checked Casual Shirt",
+  "originalPrice": 999,
+  "discountPercentage": "(10% OFF)",    
+  "discountedPrice": 899,
+  "rating": 4,
+  "ratingCount": 6,
+  "searchImage": "http://assets.myntassets.com/assets/images/22123612/2023/2/25/5416d9a7-d5de-4a7d-912e-8594b12e06211677313313787FameForeverbyLifestyleBoysBlackTartanChecksCheckedCasualShir1.jpg",
+  "isFeatured": true
+},{
+  "index": 3058,
+  "category": "kids",
+  "brand": "Jack & Jones Junior",       
+  "title": "Boys Blue Tartan Checks Checked Pure cotton Casual Shirt",
+  "subTitle": "Checked Casual Shirt",   
+  "originalPrice": 1799,
+  "discountPercentage": "(40% OFF)",    
+  "discountedPrice": 1079,
+  "rating": 4.387096881866455,
+  "ratingCount": 31,
+  "searchImage": "http://assets.myntassets.com/assets/images/19624424/2022/8/23/8bfa0715-6fc8-464a-983d-8f0698568f8d1661273522770Shirts1.jpg",
+  "isFeatured": true
+},{
+  "index": 3093,
+  "category": "kids",
+  "brand": "Ed-a-Mamma",
+  "title": "Boys Blue Buffalo Checks Checked Casual Shirt",
+  "subTitle": "Casual Shirt",
+  "originalPrice": 1299,
+  "discountPercentage": "(40% OFF)",    
+  "discountedPrice": 779,
+  "rating": 4.047618865966797,
+  "ratingCount": 21,
+  "searchImage": "http://assets.myntassets.com/assets/images/20488334/2022/10/21/a924304b-4a1b-47aa-b90c-c02d96aa5e051666340413847Ed-A-MammaSustainableWaffleChecksShirtForBoys-Blue1.jpg",
+  "isFeatured": true
+},{
+  "index": 3067,
+  "category": "kids",
+  "brand": "M&H Juniors",
+  "title": "Boys Blue Conversational Printed Casual Pure cotton Shirt",
+  "subTitle": "Boys Pure cotton Casual Shirt",
+  "originalPrice": 1599,
+  "discountPercentage": "(70% OFF)",    
+  "discountedPrice": 479,
+  "rating": 4.285714149475098,
+  "ratingCount": 14,
+  "searchImage": "http://assets.myntassets.com/assets/images/17333826/2022/8/18/92239c57-5952-47a3-98e5-06aaab928b231660825173072-MH-Juniors-Boys-Blue-Conversational-Printed-Casual-Pure-cott-1.jpg",
+  "isFeatured": true
+}
   ]

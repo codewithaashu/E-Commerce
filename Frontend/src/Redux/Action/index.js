@@ -27,7 +27,12 @@ export const removeSelectedProduct=()=>{
         type:"REMOVE_SELECTION"
     })
 }
-
+export const fetchSearchProduct = (apiData)=>{
+    return({
+        type:"SEARCH_PRODUCT",
+        payload:apiData
+    })
+}
 export const setUser = (user)=>{
     return(
         {

@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
 import "./App.css";
-import ProductListing from './Components/AllProductListing';
+import Home from './Components/Home';
+import Footer from './Components/Footer';
 const App = () => {
   return (
     <>
       <Navbar />
-      <ProductListing />
+      <Home/>
+      <Footer/> 
     </>
   )
 }

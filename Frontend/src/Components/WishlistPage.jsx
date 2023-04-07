@@ -60,7 +60,7 @@ const WishlistPage = () => {
                                     <div className="wishlist-product-card" key={curr._id}>
                                     <div className="wishlist-prd-image">
                                         <Link to="/">
-                                            <img src={curr.image} alt="" />
+                                            <img src={curr.searchImage} alt="" />
                                         </Link>
                                     </div>
                                     <div className="wishlist-close-btn">
@@ -68,10 +68,10 @@ const WishlistPage = () => {
                                     </div>
                                     <div className="wishlist-prd-details">
                                         <div className='wishlist-prd-title'>
-                                            {curr.title}
+                                            {curr.subTitle}
                                         </div>
                                         <div className="price pt-2" style={{ textAlign: "center" }}>
-                                            {`Rs ${curr.price}`}<span className='mp-price'>Rs. 1599</span> <span className='discount'>(58% off)</span>
+                                            {`Rs ${curr.discountedPrice}`}<span className='mp-price'>{`Rs. ${curr.originalPrice}`}</span> <span className='discount'>{"("+Math.round(((curr.originalPrice-curr.discountedPrice)/curr.originalPrice)*100)+"% OFF)"}</span>
                                         </div>
                                         <div className="move-to-bag">
                                             <Link className="move-btn link" onClick={()=>moveToBag(curr)}>Move to Bag</Link>

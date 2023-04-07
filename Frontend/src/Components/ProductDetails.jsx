@@ -17,7 +17,7 @@ const ProductDetails = () => {
     }
 },[id])
   const fetchProductDetails = async () => {
-    const apiData = await axios.get(`http://localhost:5000/product/?id=${id}`).catch((err) => console.log(err));
+    const apiData = await axios.get(`http://localhost:5000/product/?index=${id}`).catch((err) => console.log(err));
     dispatch(fetchSelectedProduct(apiData.data.products[0]));//our api
     // const apiData = await axios.get(`https://fakestoreapi.com/products/${id}`).catch((err) => console.log(err));
     // dispatch(fetchSelectedProduct(apiData.data));

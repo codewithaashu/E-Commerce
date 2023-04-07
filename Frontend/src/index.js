@@ -16,6 +16,7 @@ import Login from './Components/Login';
 import Register from './Components/Register';
 import Wishlist from './Components/Wishlist';
 import AddToBag from './Components/AddToBag';
+import SearchProduct from './Components/SearchProduct';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path:"/products/:id",
     element:<ProductDetails/>
+  },
+  {
+    path:"/search",
+    element:<SearchProduct/>
   },
   {
     path:"/login",

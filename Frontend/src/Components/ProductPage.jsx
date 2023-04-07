@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router';
 import Spinner from './Spinner';
 //import component and css for toastify
 import { ToastContainer, toast } from 'react-toastify';
@@ -13,7 +12,6 @@ const ProductPage = () => {
     const dispatch = useDispatch();
     let size = [30, 32, 34, 36, 38];
     let serviceInfo = ["100% Original Products", "Pay on delivery might be available", "Easy 14 days returns and exchanges", "Try & Buy might be available"];
-    const navigate = useNavigate();
     const user = useSelector((state) => state.setUserFunc.user);
     const successToast = (msg) => {
         toast.success(msg, {
@@ -80,18 +78,19 @@ const ProductPage = () => {
                 <Spinner />
             ) : (
                 <>
+
                     <div className="container-fluid mt-5">
                         <div className="row pdp-cont">
                             <div className="col-12 col-sm-12 col-md-6 col-lg-6 product-image-box">
-                                <img className='px-2' src={productDetails.image} alt="Product Pic" style={{ height: "90%", width: "90%" }} />
+                                <img className='px-2' src={productDetails.searchImage} alt="Product Pic" style={{ height: "90%", width: "90%" }} />
                             </div>
                             <div className="col-12 col-sm-12 col-md-6 col-lg-6 content-box px-3">
                                 <div className="product-detail-box">
-                                    <h1 className='pdp-title'>Roadster</h1>
+                                    <h1 className='pdp-title'>{productDetails.brand}</h1>
                                     <h1 className='pdp-name'>{productDetails.title}</h1>
                                 </div>
                                 <div className="pdp-price">
-                                    <strong>Rs. {productDetails.price}</strong><span className='mp-price'>MRP {productDetails.price * 5}</span> <span className='discount'>(58% off)</span>
+                                    <strong>Rs. {productDetails.discountedPrice}</strong><span className='mp-price'>MRP {productDetails.originalPrice}</span> <span className='discount'>{"("+Math.round(((productDetails.originalPrice-productDetails.discountedPrice)/productDetails.originalPrice)*100)+"% OFF)"}</span>
                                     <div className='pt-2'>
                                         <p className='pdf-info'>inclusive of all taxes</p>
                                     </div>
@@ -152,7 +151,7 @@ const ProductPage = () => {
                                         <i className="far fa-file-alt" style={{ marginLeft: "6px" }}></i>
                                     </h4>
                                     <p className="pdp-details-description">
-                                        {productDetails.description}
+                                    Blue and beige checked casual shirt, has a spread collar, long sleeves, full button placket, curved hem, one patch pocket
                                     </p>
                                     <div className="pdp-sizeFitBox">
                                         <h4 className="pdp-sizeFit-title">

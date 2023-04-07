@@ -58,7 +58,7 @@ const RegisterPage = () => {
     }
     return (
         <>
-            <div className="login-cont">
+            <div className="login-cont" style={{overflowX:"hidden"}}>
                 <div className="login-box m-3">
                     <div className="login-head">
                         Create your Account

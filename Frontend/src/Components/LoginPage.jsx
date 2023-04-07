@@ -43,7 +43,7 @@ const LoginPage = () => {
     }
     return (
         <>
-            <div className="login-cont">
+            <div className="login-cont" style={{overflowX:"hidden"}}>
                 <div className="login-box">
                     <div className="login-head">
                         Login to your account
@@ -52,7 +52,7 @@ const LoginPage = () => {
                         <div className="form-group">
                             <input type="text" name="phone" autoComplete='false' onFocus={() => setFlow1(true)} onBlur={() => !phone?setFlow1(false):setFlow1(true)}  onChange={(e)=>setPhone(e.target.value)}/>
                             <span className={`placeholderText ${flow1 === true ? "focusText" : ""}`}>
-                                Mobile Number
+                                Mobile&nbsp;Number
                                 <span style={{ color: "rgb(255, 87, 34)" }}>*</span>
                             </span>
                         </div>

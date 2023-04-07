@@ -5,18 +5,21 @@ const jwt = require("jsonwebtoken");
 const getAllProduct = async (req, res) => {
     //if there is any query in url
     //get the query 
-    const { category, id } = req.query;
-    //define the queryObject 
+    const { category, index } = req.query;
+    //define the queryObject
+    console.log(req.query); 
     const queryObject = {};
     if (category) {
         queryObject.category = category;
     }
-    if (id) {
-        idFix = Number(id);
-        queryObject.id = idFix;
+    if (index) {
+        indexFix = Number(index);
+        queryObject.index = indexFix;
     }
+    console.log(queryObject);
     //get json data from collection
     const products = await Product.find(queryObject);
+    console.log(products);
     //send and display the data as json
     res.status(200).json({ products });
 }
@@ -26,7 +29,7 @@ const registeredUser = async (req, res) => {
         //now the req.body data will save in user db
         const { email, password, phone, fullName, gender } = req.body;
         //check this email and phone number already exist
-        let user = await Users.findOne({phone:phone});
+        user = await Users.findOne({phone:phone});
         if (user) {
             return res.send("Already Registered");
         }
@@ -159,7 +162,8 @@ const getSearchItem = async(req,res)=>{
     const product = await Product.find({
         "$or":[
             {"title":{$regex:searchQuery}},
-            {"category":{$regex:searchQuery}}
+            // {"category":{$regex:searchQuery}},
+            {"brand":{$regex:searchQuery}},
         ]
     })
     console.log(product);

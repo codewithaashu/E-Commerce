@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import { setUser } from '../Redux/Action'
+import React from 'react'
 import AddToBagEmpty from './AddToBagEmpty'
 import AddToBagNavbar from './AddToBagNavbar'
 import AddToBagPage from './AddToBagPage'
