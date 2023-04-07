@@ -7,13 +7,13 @@ const Footer = () => {
             <div id="mainbox">
                 <div className="box1">
                     <h5 className="h5_g" >ONLINE SHOPPING</h5>
-                    <Link to={"/categories/men's clothing"}>Men</Link>
+                    <Link to={"/categories/mens"}>Men</Link>
                     <br />
-                    <Link to={"/categories/women's clothing"}>Women</Link>
+                    <Link to={"/categories/womens"}>Women</Link>
                     <br />
                     <Link to={"/categories/electronics"}>Electronics</Link>
                     <br />
-                    <Link to={"/categories/jewelery"}>Jewelery</Link>
+                    <Link to={"/categories/jewellery"}>Jewelery</Link>
                     <br />
                 </div>
                 <div className="box2">

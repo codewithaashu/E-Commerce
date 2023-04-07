@@ -30,16 +30,20 @@ const Home = () => {
             </Link>
           </div>
           <div className="menu-box1">
-            <img
-              src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto,w_200,c_limit,fl_progressive/assets/images/2023/3/4/8ea951bd-68e3-43d8-a332-01b085c11c171677917419576-SS23-TopNav-Footwear.jpg"
-              alt="Menu pic"
-            />
+            <Link to={"/categories/footwear"}>
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto,w_200,c_limit,fl_progressive/assets/images/2023/3/4/8ea951bd-68e3-43d8-a332-01b085c11c171677917419576-SS23-TopNav-Footwear.jpg"
+                alt="Menu pic"
+              />
+            </Link>
           </div>
           <div className="menu-box1">
-            <img
-              src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto,w_200,c_limit,fl_progressive/assets/images/2023/3/4/3849d868-2bed-46cf-b7f7-2b20e3f63abf1677917419617-SS23-TopNav-Jewellery.jpg"
-              alt="Menu pic"
-            />
+            <Link to={"/categories/jewellery"}>
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto,w_200,c_limit,fl_progressive/assets/images/2023/3/4/3849d868-2bed-46cf-b7f7-2b20e3f63abf1677917419617-SS23-TopNav-Jewellery.jpg"
+                alt="Menu pic"
+              />
+            </Link>
           </div>
         </div>
 
@@ -113,26 +117,87 @@ const Home = () => {
             />
           </div>
           <div className="banner-info">
-            <img
-              src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/6/5cc42525-0b9c-4b2b-8308-048dfbd679cb1680759261208-dk-gerniric_model--1-.jpg"
-              alt="Banner Pic"
-            />
+            <Link to={"/product"}>
+              <img
+                src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/6/5cc42525-0b9c-4b2b-8308-048dfbd679cb1680759261208-dk-gerniric_model--1-.jpg"
+                alt="Banner Pic"
+                style={{ cursor: "pointer" }}
+              />
+            </Link>
           </div>
           <div className="shop-by-category-heading">
-            <img src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/a9740648-846f-46d8-bb8e-c72dbe9cad131680503282470-Shop-By-Category.jpg" alt="" />
+            <img
+              src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/a9740648-846f-46d8-bb8e-c72dbe9cad131680503282470-Shop-By-Category.jpg"
+              alt=""
+            />
           </div>
           <div className="shop-by-category-cart">
-            <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/9166bbae-b90c-443d-b45e-4420b2b0a8b51680504171267-Shop-By-Category_HP_02.jpg" alt="" />
-            <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/d40ad591-ef03-4399-93da-c45670bb29531680504171211-Shop-By-Category_HP_28.jpg" alt="" />
-            <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/46c17b2b-3f9d-48b3-a59b-a1e827af8a911680504170862-Shop-By-Category_HP_05.jpg" alt="" />
-            <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/a42b3ebb-450e-43bb-add6-858d6590037a1680504170746-Shop-By-Category_HP_23.jpg" alt="" />
-            <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/dc417052-bc61-42a7-a191-517d66b43a561680504171516-Shop-By-Category_HP_18.jpg" alt="" />
-            <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/bcc206df-2fa7-4c8b-8e13-cb1d281ef59d1680504171553-Shop-By-Category_HP_19.jpg" alt="" />
-            <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/682e91a1-260f-45f4-af75-7052dab95d701680504171175-Shop-By-Category_HP_14.jpg" alt="" />
-            <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/39835f2b-5e3b-4a44-93ef-f18eef9bab2d1680504171986-Shop-By-Category_HP_15.jpg" alt="" />
-            <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/87c381ad-8f90-4fa1-85d8-dfb92a2ba4bf1680504171014-Shop-By-Category_HP_22.jpg" alt="" />
-            <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/fbe99f9e-06aa-4a1f-b23c-225deb65f1101680504171793-Shop-By-Category_HP_16.jpg" alt="" />
-            <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/a8ed5113-8990-4229-ac32-8e8595264e6d1680504171641-Shop-By-Category_HP_11.jpg" alt="" />
+            <Link to={"/categories/womens"}>
+              <img
+                src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/9166bbae-b90c-443d-b45e-4420b2b0a8b51680504171267-Shop-By-Category_HP_02.jpg"
+                alt=""
+              />
+            </Link>
+            <Link to={"/categories/womens"}>
+              <img
+                src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/d40ad591-ef03-4399-93da-c45670bb29531680504171211-Shop-By-Category_HP_28.jpg"
+                alt=""
+              />
+            </Link>
+            <Link to={"/categories/mens"}>
+              <img
+                src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/46c17b2b-3f9d-48b3-a59b-a1e827af8a911680504170862-Shop-By-Category_HP_05.jpg"
+                alt=""
+              />
+            </Link>
+            <Link to={"/categories/jewellery"}>
+              <img
+                src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/a42b3ebb-450e-43bb-add6-858d6590037a1680504170746-Shop-By-Category_HP_23.jpg"
+                alt=""
+              />
+            </Link>
+            <Link to={"/categories/womens"}>
+              <img
+                src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/dc417052-bc61-42a7-a191-517d66b43a561680504171516-Shop-By-Category_HP_18.jpg"
+                alt=""
+              />
+            </Link>
+            <Link to={"/categories/mens"}>
+              <img
+                src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/bcc206df-2fa7-4c8b-8e13-cb1d281ef59d1680504171553-Shop-By-Category_HP_19.jpg"
+                alt=""
+              />
+            </Link>
+            <Link to={"/categories/kids"}>
+              <img
+                src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/682e91a1-260f-45f4-af75-7052dab95d701680504171175-Shop-By-Category_HP_14.jpg"
+                alt=""
+              />
+            </Link>
+            <Link to={"/categories/footwear"}>
+              <img
+                src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/39835f2b-5e3b-4a44-93ef-f18eef9bab2d1680504171986-Shop-By-Category_HP_15.jpg"
+                alt=""
+              />
+            </Link>
+            <Link to={"/categories/electronics"}>
+              <img
+                src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/87c381ad-8f90-4fa1-85d8-dfb92a2ba4bf1680504171014-Shop-By-Category_HP_22.jpg"
+                alt=""
+              />
+            </Link>
+            <Link to={"/categories/footwear"}>
+              <img
+                src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/fbe99f9e-06aa-4a1f-b23c-225deb65f1101680504171793-Shop-By-Category_HP_16.jpg"
+                alt=""
+              />
+            </Link>
+            <Link to={"/categories/electronics"}>
+              <img
+                src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/4/3/a8ed5113-8990-4229-ac32-8e8595264e6d1680504171641-Shop-By-Category_HP_11.jpg"
+                alt=""
+              />
+            </Link>
           </div>
         </div>
       </div>

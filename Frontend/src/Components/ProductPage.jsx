@@ -47,7 +47,7 @@ const ProductPage = () => {
         if (user?.phone === undefined) {
             return errorToast("You are not login. Please,Try Again")
         }
-        await axios.post(`${BASE_URL}product/addtocart`, {
+        await axios.post(`${BASE_URL}/product/addtocart`, {
             product: productDetails,
             token: user.phone
         }).then((res) => {
@@ -64,7 +64,7 @@ const ProductPage = () => {
         if (user?.phone === undefined) {
             return errorToast("You are not login. Please,Try Again")
         }
-        await axios.post(`${BASE_URL}product/wishlist`, {
+        await axios.post(`${BASE_URL}/product/wishlist`, {
             product: productDetails,
             token: user.phone
         }).then((res) => {

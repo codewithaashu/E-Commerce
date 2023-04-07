@@ -32,7 +32,7 @@ const Navbar = () => {
   };
   const fetchSearchItem = async (search) => {
     const item = await axios
-    .get(`${BASE_URL}product/search/${search}`)
+    .get(`${BASE_URL}/product/search/${search}`)
     .catch((err) => console.log(err));
     if (item.data.length === 0) {
       errorToast("We couldn't find any matches.");

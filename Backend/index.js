@@ -21,7 +21,7 @@ app.use(express.urlencoded({extended:false}))
 
 //create the server i.e. request and response
 app.get("/",(req,res)=>{
-    res.send("Server is created")
+    res.send("Server is created by Ashish Ranjan")
 })
 //use the cors
 app.use(cors());

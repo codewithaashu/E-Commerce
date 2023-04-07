@@ -24,24 +24,24 @@ const WishlistPage = () => {
     }
     useEffect(() => {
       return async() => {
-        const user = await axios.get(`${BASE_URL}product/user/?phone=${localStorage.getItem("phone")}`).catch((err)=>{console.log("error is : "+err);})
+        const user = await axios.get(`${BASE_URL}/product/user/?phone=${localStorage.getItem("phone")}`).catch((err)=>{console.log("error is : "+err);})
         dispatch(setUser(user.data.user));
       }
     },[user.wishlistProduct.length])
     const removeToWishlist = async(_id)=>{
-        const res = await axios.post(`${BASE_URL}/product/removetowishlist`,{
+        const res = await axios.post(`${BASE_URL}//product/removetowishlist`,{
             _id:_id,
             phone:localStorage.getItem("phone")
         }).catch((err)=>console.log(err));
         dispatch(setUser(res.data));
     }
     const moveToBag =async(product)=>{
-        const res = await axios.post(`${BASE_URL}product/removetowishlist`,{
+        const res = await axios.post(`${BASE_URL}/product/removetowishlist`,{
             _id:product._id,
             phone:localStorage.getItem("phone")
         }).catch((err)=>console.log(err));
         dispatch(setUser(res.data));
-        await axios.post(`${BASE_URL}product/addtocart`,{
+        await axios.post(`${BASE_URL}/product/addtocart`,{
             product:product,
             token:user.phone
         }).then((res)=>res.data==="not login"?"":successToast("Product is  added to cart")).catch((err)=>console.log(err));

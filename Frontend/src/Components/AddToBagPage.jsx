@@ -11,12 +11,12 @@ const AddToBagPage = () => {
   let discount = 0;
   useEffect(() => {
     return async () => {
-      const user = await axios.get(`${BASE_URL}product/user/?phone=${localStorage.getItem("phone")}`).catch((err) => { console.log("error is : " + err); })
+      const user = await axios.get(`${BASE_URL}/product/user/?phone=${localStorage.getItem("phone")}`).catch((err) => { console.log("error is : " + err); })
       dispatch(setUser(user.data.user));
     }
   }, [user.addToCartProduct.length]);
   const removeToBag = async (_id) => {
-    const res = await axios.post(`${BASE_URL}product/removetoBag`, {
+    const res = await axios.post(`${BASE_URL}/product/removetoBag`, {
       _id: _id,
       phone: localStorage.getItem("phone")
     }).catch((err) => console.log(err));
@@ -24,7 +24,7 @@ const AddToBagPage = () => {
   }
   const placedOrder = async()=>{
     Swal.fire('Your order is successfully Placed');
-    const res =await axios.post(`${BASE_URL}product/placedOrder`,{
+    const res =await axios.post(`${BASE_URL}/product/placedOrder`,{
       phone:localStorage.getItem("phone")
     }).catch((err)=>console.log(err))
     dispatch(setUser(res.data));
