@@ -6,6 +6,7 @@ import { Link, useNavigate} from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { setUser } from '../Redux/Action';
+import { BASE_URL } from '../Secret';
 const RegisterPage = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -34,7 +35,7 @@ const RegisterPage = () => {
         localStorage.setItem("phone",phone);
 
         //frontend send request to get user data by phone field  and then backend perform operation and send data of user
-        const user = await axios.get(`http://localhost:5000/product/user/?phone=${phone}`).catch((err)=>{console.log("error is : "+err);})
+        const user = await axios.get(`${BASE_URL}product/user/?phone=${phone}`).catch((err)=>{console.log("error is : "+err);})
         dispatch(setUser(user.data.user));
         navigate("/");
     }
@@ -46,7 +47,7 @@ const RegisterPage = () => {
         }
         //when we click on submit btn then we send the data(work as postman)
         //for sending data, api with post method will call
-        await axios.post("http://localhost:5000/product/register", {
+        await axios.post(`${BASE_URL}product/register`, {
             email, password, phone, fullName, gender
         }).then((res) => res.data==="Already Registered"?errorToast("You are already registered. Login in your account"):successfullyRegister(phone)).catch((err) => console.log("Error is : " + err))
         setEmail("");

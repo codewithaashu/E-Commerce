@@ -7,7 +7,7 @@ import Navbar from './Navbar';
 import ProductCard from './ProductCard';
 import Footer from './Footer';
 import Spinner from './Spinner';
-
+import { BASE_URL } from '../Secret';
 const CategoryProduct = () => {
     const { category } = useParams();
     const dispatch = useDispatch();
@@ -22,7 +22,7 @@ const CategoryProduct = () => {
 
     const fetchCategoryData = async () => {
 
-        const apiData = await axios.get(`http://localhost:5000/product/?category=${category}`).catch((err) => console.log("Error is " + err)); //our api
+        const apiData = await axios.get(`${BASE_URL}product/?category=${category}`).catch((err) => console.log("Error is " + err)); //our api
         dispatch(fetchCategoryProducts(apiData.data.products));//our api
         // const apiData = await axios.get(`https://fakestoreapi.com/products/category/${category}`).catch((err) => console.log("Error is "+err));
         // dispatch(fetchCategoryProducts(apiData.data));

@@ -6,8 +6,7 @@ const getAllProduct = async (req, res) => {
     //if there is any query in url
     //get the query 
     const { category, index } = req.query;
-    //define the queryObject
-    console.log(req.query); 
+    //define the queryObject 
     const queryObject = {};
     if (category) {
         queryObject.category = category;
@@ -16,10 +15,8 @@ const getAllProduct = async (req, res) => {
         indexFix = Number(index);
         queryObject.index = indexFix;
     }
-    console.log(queryObject);
     //get json data from collection
     const products = await Product.find(queryObject);
-    console.log(products);
     //send and display the data as json
     res.status(200).json({ products });
 }
@@ -154,7 +151,6 @@ const placedOrderBag= async(req,res)=>{
 // }
 
 const getSearchItem = async(req,res)=>{
-    console.log(req.params.key)
     //get data which comes from frontend
     var searchQuery = new RegExp(req.params.key,'i');
     //get data from db corresponding to search query
@@ -166,7 +162,6 @@ const getSearchItem = async(req,res)=>{
             {"brand":{$regex:searchQuery}},
         ]
     })
-    console.log(product);
     res.send(product);
 }
 //export the controller

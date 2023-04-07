@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { setUser } from '../Redux/Action';
 import Swal from 'sweetalert2'
+import { BASE_URL } from '../Secret';
 const AddToBagPage = () => {
   const user = useSelector((state) => state.setUserFunc.user);
   const dispatch = useDispatch();
@@ -10,12 +11,12 @@ const AddToBagPage = () => {
   let discount = 0;
   useEffect(() => {
     return async () => {
-      const user = await axios.get(`http://localhost:5000/product/user/?phone=${localStorage.getItem("phone")}`).catch((err) => { console.log("error is : " + err); })
+      const user = await axios.get(`${BASE_URL}product/user/?phone=${localStorage.getItem("phone")}`).catch((err) => { console.log("error is : " + err); })
       dispatch(setUser(user.data.user));
     }
   }, [user.addToCartProduct.length]);
   const removeToBag = async (_id) => {
-    const res = await axios.post("http://localhost:5000/product/removetoBag", {
+    const res = await axios.post(`${BASE_URL}product/removetoBag`, {
       _id: _id,
       phone: localStorage.getItem("phone")
     }).catch((err) => console.log(err));
@@ -23,7 +24,7 @@ const AddToBagPage = () => {
   }
   const placedOrder = async()=>{
     Swal.fire('Your order is successfully Placed');
-    const res =await axios.post("http://localhost:5000/product/placedOrder",{
+    const res =await axios.post(`${BASE_URL}product/placedOrder`,{
       phone:localStorage.getItem("phone")
     }).catch((err)=>console.log(err))
     dispatch(setUser(res.data));

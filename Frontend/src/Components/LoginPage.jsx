@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { setUser } from '../Redux/Action';
+import { BASE_URL } from '../Secret';
 const LoginPage = () => {
     const [flow1, setFlow1] = useState(false);
     const [flow2, setFlow2] = useState(false);
@@ -31,7 +32,7 @@ const LoginPage = () => {
         localStorage.setItem("phone",phone);
 
         //frontend send request to get user data by phone field  and then backend perform operation and send data of user
-        const user = await axios.get(`http://localhost:5000/product/user/?phone=${phone}`).catch((err)=>{console.log("error is : "+err);})
+        const user = await axios.get(`${BASE_URL}product/user/?phone=${phone}`).catch((err)=>{console.log("error is : "+err);})
         dispatch(setUser(user.data.user));
         navigate("/");
     }
@@ -39,7 +40,7 @@ const LoginPage = () => {
         e.preventDefault();
         //when you submit the login data will send to backend
         //for send data to backend(api helps to communicate) we need api with post method
-        await axios.post("http://localhost:5000/product/login",{phone,password}).then((res)=> res.data==="User not exist"?errorToast("User is not exist. You can create your Account."): res.data==="Login success"?changeUser(phone):errorToast("Your password will not matched. Try Again :)")).catch((err)=>console.log("login error is :"+err));        
+        await axios.post(`${BASE_URL}product/login`,{phone,password}).then((res)=> res.data==="User not exist"?errorToast("User is not exist. You can create your Account."): res.data==="Login success"?changeUser(phone):errorToast("Your password will not matched. Try Again :)")).catch((err)=>console.log("login error is :"+err));        
     }
     return (
         <>

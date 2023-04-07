@@ -7,6 +7,7 @@ import { fetchSearchProduct } from "../Redux/Action";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SearchProduct from "./SearchProduct";
+import { BASE_URL } from "../Secret";
 const Navbar = () => {
   const [inputVal, setInputVal] = useState("");
   const dispatch = useDispatch();
@@ -31,7 +32,7 @@ const Navbar = () => {
   };
   const fetchSearchItem = async (search) => {
     const item = await axios
-    .get(`http://localhost:5000/product/search/${search}`)
+    .get(`${BASE_URL}product/search/${search}`)
     .catch((err) => console.log(err));
     if (item.data.length === 0) {
       errorToast("We couldn't find any matches.");

@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { setUser } from '../Redux/Action';
 import Footer from './Footer';
+import { BASE_URL } from '../Secret';
 const ProductPage = () => {
     const productDetails = useSelector((state) => state.fetchProductDetailsFunc.product);
     const dispatch = useDispatch();
@@ -46,7 +47,7 @@ const ProductPage = () => {
         if (user?.phone === undefined) {
             return errorToast("You are not login. Please,Try Again")
         }
-        await axios.post("http://localhost:5000/product/addtocart", {
+        await axios.post(`${BASE_URL}product/addtocart`, {
             product: productDetails,
             token: user.phone
         }).then((res) => {
@@ -63,7 +64,7 @@ const ProductPage = () => {
         if (user?.phone === undefined) {
             return errorToast("You are not login. Please,Try Again")
         }
-        await axios.post("http://localhost:5000/product/wishlist", {
+        await axios.post(`${BASE_URL}product/wishlist`, {
             product: productDetails,
             token: user.phone
         }).then((res) => {
