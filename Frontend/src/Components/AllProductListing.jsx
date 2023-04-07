@@ -5,6 +5,7 @@ import { fetchAllProducts } from '../Redux/Action';
 import axios from 'axios';
 import Spinner from './Spinner';
 import Footer from './Footer';
+import { BASE_URL } from '../Secret';
 const ProductListing = () => {
   const dispatch = useDispatch();
 
@@ -16,7 +17,7 @@ const ProductListing = () => {
     }
   }, [])
   const fetchData = async () => {
-    const apiData = await axios.get("http://localhost:5000/product").catch((err) => {
+    const apiData = await axios.get(`${BASE_URL}/product`).catch((err) => {
       console.log("Error is " + err);
     }) //our api
     // const apiData = await axios.get("https://fakestoreapi.com/products").catch((err) => {
@@ -29,7 +30,7 @@ const ProductListing = () => {
   const storeData = useSelector((state) => state.fetchAllProductFunc.product);
   return (
     <>
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 cols-lg-6 mt-5">
+      <div className="row row-cols-2 row-cols-sm-2 row-cols-md-5 cols-lg-6 mt-5 card-box1">
         {
           storeData.length === 0 ? <Spinner /> : <>
             <ProductCard data={storeData} />

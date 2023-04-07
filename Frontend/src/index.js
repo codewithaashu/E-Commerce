@@ -16,12 +16,18 @@ import Login from './Components/Login';
 import Register from './Components/Register';
 import Wishlist from './Components/Wishlist';
 import AddToBag from './Components/AddToBag';
+import SearchProduct from './Components/SearchProduct';
+import ProductListing from './Components/AllProductListing';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <Error />
+  },
+  {
+    path:"/product",
+    element:<ProductListing/>
   },
   {
     path: "/categories/:category",
@@ -31,6 +37,10 @@ const router = createBrowserRouter([
   {
     path:"/products/:id",
     element:<ProductDetails/>
+  },
+  {
+    path:"/search",
+    element:<SearchProduct/>
   },
   {
     path:"/login",

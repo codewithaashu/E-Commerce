@@ -5,15 +5,15 @@ const jwt = require("jsonwebtoken");
 const getAllProduct = async (req, res) => {
     //if there is any query in url
     //get the query 
-    const { category, id } = req.query;
+    const { category, index } = req.query;
     //define the queryObject 
     const queryObject = {};
     if (category) {
         queryObject.category = category;
     }
-    if (id) {
-        idFix = Number(id);
-        queryObject.id = idFix;
+    if (index) {
+        indexFix = Number(index);
+        queryObject.index = indexFix;
     }
     //get json data from collection
     const products = await Product.find(queryObject);
@@ -26,7 +26,7 @@ const registeredUser = async (req, res) => {
         //now the req.body data will save in user db
         const { email, password, phone, fullName, gender } = req.body;
         //check this email and phone number already exist
-        let user = await Users.findOne({phone:phone});
+        user = await Users.findOne({phone:phone});
         if (user) {
             return res.send("Already Registered");
         }
@@ -151,7 +151,6 @@ const placedOrderBag= async(req,res)=>{
 // }
 
 const getSearchItem = async(req,res)=>{
-    console.log(req.params.key)
     //get data which comes from frontend
     var searchQuery = new RegExp(req.params.key,'i');
     //get data from db corresponding to search query
@@ -159,10 +158,10 @@ const getSearchItem = async(req,res)=>{
     const product = await Product.find({
         "$or":[
             {"title":{$regex:searchQuery}},
-            {"category":{$regex:searchQuery}}
+            // {"category":{$regex:searchQuery}},
+            {"brand":{$regex:searchQuery}},
         ]
     })
-    console.log(product);
     res.send(product);
 }
 //export the controller

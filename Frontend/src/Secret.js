@@ -1,0 +1,1 @@
+export const BASE_URL = "https://myntraclonebackend1.onrender.com"

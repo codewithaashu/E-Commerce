@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { setUser } from '../Redux/Action';
 import Swal from 'sweetalert2'
+import { BASE_URL } from '../Secret';
 const AddToBagPage = () => {
   const user = useSelector((state) => state.setUserFunc.user);
   const dispatch = useDispatch();
@@ -10,12 +11,12 @@ const AddToBagPage = () => {
   let discount = 0;
   useEffect(() => {
     return async () => {
-      const user = await axios.get(`http://localhost:5000/product/user/?phone=${localStorage.getItem("phone")}`).catch((err) => { console.log("error is : " + err); })
+      const user = await axios.get(`${BASE_URL}/product/user/?phone=${localStorage.getItem("phone")}`).catch((err) => { console.log("error is : " + err); })
       dispatch(setUser(user.data.user));
     }
   }, [user.addToCartProduct.length]);
   const removeToBag = async (_id) => {
-    const res = await axios.post("http://localhost:5000/product/removetoBag", {
+    const res = await axios.post(`${BASE_URL}/product/removetoBag`, {
       _id: _id,
       phone: localStorage.getItem("phone")
     }).catch((err) => console.log(err));
@@ -23,7 +24,7 @@ const AddToBagPage = () => {
   }
   const placedOrder = async()=>{
     Swal.fire('Your order is successfully Placed');
-    const res =await axios.post("http://localhost:5000/product/placedOrder",{
+    const res =await axios.post(`${BASE_URL}/product/placedOrder`,{
       phone:localStorage.getItem("phone")
     }).catch((err)=>console.log(err))
     dispatch(setUser(res.data));
@@ -64,17 +65,17 @@ const AddToBagPage = () => {
           </div>
           <div className="addtocart-box">
             {user.addToCartProduct.map((curr) => {
-              totalMRP += 1599;
-              discount+= 1599-curr.price;
+              totalMRP += curr.originalPrice;
+              discount+= curr.originalPrice-curr.discountedPrice;
               return (<div className="cart-item" key={curr._id}>
                 <div className="cart-img">
-                  <img src={curr.image} alt="Product image" width={"100%"} height={"100%"} />
+                  <img src={curr.searchImage} alt="Product pic" width={"100%"} height={"100%"} />
                 </div>
                 <div className="cart-item-details">
-                  <div className='cart-item-brand'>Roadster</div>
-                  <div className="cart-item-title">{curr.title}</div>
+                  <div className='cart-item-brand'>{curr.brand}</div>
+                  <div className="cart-item-title">{curr.subTitle}</div>
                   <div className="price">
-                    {`Rs. ${curr.price}`}<span className='mp-price'>Rs. 1599</span> <span className='discount'>(58% off)</span>
+                  {`Rs ${curr.discountedPrice}`}<span className='mp-price'>{`Rs. ${curr.originalPrice}`}</span> <span className='discount'>{"("+Math.round(((curr.originalPrice-curr.discountedPrice)/curr.originalPrice)*100)+"% OFF)"}</span>
                   </div>
                   <div className="return-period">
                     <i className="fa fa-undo" aria-hidden="true" style={{ color: "black", height: "100%" }} ></i>

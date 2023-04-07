@@ -7,24 +7,24 @@ const ProductCard = ({ data }) => {
       {
 
         data.map((curr) => {
-          const {id,_id,image,title,price}=curr;
+          const {index,_id,searchImage,subTitle,discountedPrice,rating,ratingCount,brand,originalPrice,discountPercentage}=curr;
           return (
             <div className="col card-box" key={_id}>
               <div className="card" style={{ width: "220px", maxHeight: "500px" }}>
-                <Link className='link' to={`/products/${id}`} >
+                <Link  to={`/products/${index}`} >
                   <div className="img-box">
-                    <img src={image} className="card-img-top" alt="Shirt Photo" style={{ height: "280px", width: "100%" }} />
+                    <img src={searchImage} className="card-img-top" alt="Shirt Photo" style={{ height: "280px", width: "100%" }} />
                     <div className="rating-box">
-                      {curr.rating.rate} <span className="fa fa-star" style={{ color: "#15958E" }}></span> | <span>{curr.rating.count}</span>
+                      {rating.toFixed(1)} <span className="fa fa-star" style={{ color: "#15958E" }}></span> | <span>{ratingCount<1000?ratingCount:((ratingCount/1000).toFixed(1)+"K")}</span>
                     </div>
                   </div>
                   <div className="card-body">
                     <h3 className="brand-name">
-                      Roadster
+                      {brand}
                     </h3>
-                    <h4 className="card-text">{title.slice(0, 20) + " ..."}</h4>
+                    <h4 className="card-text">{subTitle}</h4>
                     <div className="price">
-                      {`Rs. ${price}`}<span className='mp-price'>Rs. 1599</span> <span className='discount'>(58% off)</span>
+                      {`Rs. ${discountedPrice}`}<span className='mp-price'>{`Rs. ${originalPrice}`}</span> <span className='discount'>{"("+Math.round(((originalPrice-discountedPrice)/originalPrice)*100)+"% OFF)"}</span>
                     </div>
                   </div>
                 </Link>
