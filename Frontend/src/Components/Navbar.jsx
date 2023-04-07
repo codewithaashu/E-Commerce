@@ -31,8 +31,8 @@ const Navbar = () => {
   };
   const fetchSearchItem = async (search) => {
     const item = await axios
-      .get(`http://localhost:5000/product/search/${search}`)
-      .catch((err) => console.log(err));
+    .get(`http://localhost:5000/product/search/${search}`)
+    .catch((err) => console.log(err));
     if (item.data.length === 0) {
       errorToast("We couldn't find any matches.");
       navigate("/");
@@ -44,6 +44,7 @@ const Navbar = () => {
   const searchItem = (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       let searchQuery = e.target.value;
       fetchSearchItem(searchQuery);
       setInputVal("");
