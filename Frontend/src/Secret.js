@@ -1,1 +1,1 @@
-export const BASE_URL = "https://myntraclonebackend1.onrender.com"
+export const BASE_URL = "https://ecommercehost.onrender.com"
