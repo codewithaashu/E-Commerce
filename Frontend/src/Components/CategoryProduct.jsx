@@ -36,7 +36,7 @@ const CategoryProduct = () => {
                     <Spinner />
                 ) : (
                     <>
-                        <div className="row row-cols-1 row-cols-sm-3 row-cols-md-5 cols-lg-6 mt-5 card-box1">
+                        <div className="row row-cols-1 row-cols-sm-3 row-cols-md-5 row-cols-lg-6 mt-5 card-box1">
                             <ProductCard data={categoryItems} />
                         </div>
                         <Footer />

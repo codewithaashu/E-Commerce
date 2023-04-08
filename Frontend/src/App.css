@@ -28,11 +28,11 @@
 .link:hover {
   color: #ff3e6c !important;
 }
-a{
+a {
   text-decoration: none;
   color: #000;
 }
- a:hover{
+a:hover {
   color: black;
 }
 .myntra-logo {
@@ -1121,7 +1121,7 @@ span {
 }
 .scroll-nav {
   box-shadow: 4px 5px 126px rgba(31, 28, 28, 0.8);
-  width: 75%;
+  width: 240px;
   background-color: white;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -1133,12 +1133,12 @@ span {
 .mobile-nav-img-box img {
   width: 100%;
 }
-.mobile-nav-img-box div{
-  background:#3f3947;
+.mobile-nav-img-box div {
+  background: #3f3947;
   padding: 22px 20px 4px;
-  height:131px;
-  display:flex;
-  align-items:center;
+  height: 131px;
+  display: flex;
+  align-items: center;
 }
 .mobile-nav-username {
   width: 90%;
@@ -1157,7 +1157,7 @@ span {
   width: 90%;
   text-align: end;
   position: absolute;
-  top: 70px;
+  top: 75px;
 }
 .navbar-toggler:focus {
   box-shadow: none;
@@ -1202,17 +1202,22 @@ span {
   padding: 14px 20px;
   color: #3e4152;
 }
-
-
+.card-box1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  overflow-x: hidden;
+}
 /* confirm page */
-.confirm-page{
+.confirm-page {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 100vh;
 }
-.confirm-box{
+.confirm-box {
   padding: 20px;
   margin: 8vh 0;
   background-color: rgba(176, 174, 174, 0.621);
@@ -1225,16 +1230,22 @@ span {
   justify-content: center;
   gap: 10px;
 }
-.confirm-box h1{
+.confirm-box h1 {
   font-weight: 600;
   text-align: center;
 }
-.confirm-box .img{
+.confirm-box .img {
   margin: 20px 0px;
   text-align: center;
 }
-.confirm-box p{
 
+@media (max-width: 988px) {
+  .mobile-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 10px;
+  }
 }
 @media (max-width: 700px) {
   .pdp-name {
@@ -1294,7 +1305,7 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
   }
   .card-box {
     width: 45%;
@@ -1309,12 +1320,6 @@ span {
   .banner-mob img {
     width: 50%;
     height: 220px;
-  }
-  .mobile-nav-loginBtn {
-    width: 90%;
-    text-align: end;
-    position: absolute;
-    top: 95px;
   }
   #mainbox {
     width: 100%;
@@ -1342,29 +1347,23 @@ span {
   }
 }
 @media (max-width: 400px) {
-  .mobile-nav-loginBtn {
-    width: 90%;
-    text-align: end;
-    position: absolute;
-    top: 85px;
-  }
-  .confirm-box{
+  .confirm-box {
     gap: 5px;
   }
-  .confirm-box h1{
+  .confirm-box h1 {
     font-size: 16px;
     line-height: 1.5;
   }
-  .confirm-box img{
+  .confirm-box img {
     width: 60px;
   }
-  .confirm-box .img{
+  .confirm-box .img {
     margin: 10px 0px;
   }
-  .confirm-box h4{
+  .confirm-box h4 {
     font-size: 14px;
   }
-  .confirm-box p{
+  .confirm-box p {
     font-size: 12px;
   }
 }

@@ -14,7 +14,7 @@ const SearchProduct = () => {
                     <Spinner />
                 ) : (
                     <>
-                        <div className="row row-cols-1 row-cols-sm-3 row-cols-md-4 cols-lg-5 mt-5 card-box1">
+                        <div className="row row-cols-1 row-cols-sm-3 row-cols-md-5 row-cols-lg-6 mt-5 card-box1">
                             <ProductCard data={searchItem} />
                         </div>
                         <Footer />
