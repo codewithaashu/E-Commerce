@@ -1203,6 +1203,39 @@ span {
   color: #3e4152;
 }
 
+
+/* confirm page */
+.confirm-page{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+}
+.confirm-box{
+  padding: 20px;
+  margin: 8vh 0;
+  background-color: rgba(176, 174, 174, 0.621);
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  gap: 10px;
+}
+.confirm-box h1{
+  font-weight: 600;
+  text-align: center;
+}
+.confirm-box .img{
+  margin: 20px 0px;
+  text-align: center;
+}
+.confirm-box p{
+
+}
 @media (max-width: 700px) {
   .pdp-name {
     font-size: 16px;
@@ -1314,6 +1347,25 @@ span {
     text-align: end;
     position: absolute;
     top: 85px;
+  }
+  .confirm-box{
+    gap: 5px;
+  }
+  .confirm-box h1{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .confirm-box img{
+    width: 60px;
+  }
+  .confirm-box .img{
+    margin: 10px 0px;
+  }
+  .confirm-box h4{
+    font-size: 14px;
+  }
+  .confirm-box p{
+    font-size: 12px;
   }
 }
 /* footer */

@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { setUser } from '../Redux/Action';
 import Swal from 'sweetalert2'
-import { BASE_URL } from '../Secret';
+import { BASE_URL,RAZORPAY_KEY_ID,RAZORPAY_KEY_SECRET } from '../Secret';
 const AddToBagPage = () => {
   const user = useSelector((state) => state.setUserFunc.user);
   const dispatch = useDispatch();
@@ -22,8 +22,46 @@ const AddToBagPage = () => {
     }).catch((err) => console.log(err));
     dispatch(setUser(res.data));
   }
-  const placedOrder = async()=>{
-    Swal.fire('Your order is successfully Placed');
+  const placedOrder = async(totalAmount)=>{
+    //when we click on placed order, payment page will open and product will be checkout
+    //send the total amount of order to razorpay . so we need an api
+    const orderInfo = await axios.post(`${BASE_URL}/product/checkout`,{
+        amount:totalAmount
+    })
+    const {amount,id}=orderInfo.data.orderInfo;
+    console.log(orderInfo.data.orderInfo);
+    //open the popup of razorpay
+    //so we have to add a script tag in our index.html file
+    //now we customise the popup with the options(key -value pais)
+    const options = {
+      // Enter the Key ID generated from the Dashboard
+      key: RAZORPAY_KEY_ID, 
+      // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+      amount:amount, 
+      currency: "INR",
+      name: "Myntra Baazar",
+      description: "Buy products from Myntra Baazar",
+      image: "https://constant.myntassets.com/pwa/assets/img/Icon-App-60x60@3x_2021.png",
+      //Pass the `id` obtained in the response
+      order_id:id,
+      //for confirmation the payment we request an api
+      callback_url: `${BASE_URL}/product/paymentVerification`,
+      prefill: {
+          "name": user.fullName,
+          "email": user.email,
+          "contact": user.phone
+      },
+      "notes": {
+          "address": "Indore"
+      },
+      "theme": {
+          "color": "rgb(255, 63, 108)"
+      }
+  };
+  console.log(options);
+  const razor = new window.Razorpay(options)
+  razor.open();
+    // await Swal.fire('Your order is successfully Placed');
     const res =await axios.post(`${BASE_URL}/product/placedOrder`,{
       phone:localStorage.getItem("phone")
     }).catch((err)=>console.log(err))
@@ -128,7 +166,7 @@ const AddToBagPage = () => {
             <span className="price-value">{`Rs. ${(totalMRP-discount).toFixed(2)}`}</span>
           </div>
           <div className='mt-4'>
-            <button className="place-order-btn" onClick={placedOrder}>Place Order
+            <button className="place-order-btn" onClick={()=>placedOrder((totalMRP-discount).toFixed(2))}>Place Order
             </button>
           </div>
         </div>

@@ -18,6 +18,7 @@ import Wishlist from './Components/Wishlist';
 import AddToBag from './Components/AddToBag';
 import SearchProduct from './Components/SearchProduct';
 import ProductListing from './Components/AllProductListing';
+import ConfirmOrder from './Components/ConfirmOrder';
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,9 @@ const router = createBrowserRouter([
   {
     path:"/addtobag",
     element:<AddToBag/>
+  },{
+    path:"/confirmorder",
+    element:<ConfirmOrder/>
   }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

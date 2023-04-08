@@ -2,6 +2,10 @@
 const Product = require("../DB/ProductModel");
 const Users = require("../DB/UserModel");
 const jwt = require("jsonwebtoken");
+const crypto = require("crypto");
+//require the razorpay
+const Razorpay = require("razorpay");
+const Orders = require("../DB/OrderModel");
 const getAllProduct = async (req, res) => {
     //if there is any query in url
     //get the query 
@@ -164,5 +168,53 @@ const getSearchItem = async(req,res)=>{
     })
     res.send(product);
 }
+
+//checkout the product
+const checkoutProduct =async(req,res)=>{
+    const {amount}=req.body;
+//create an instance of razorpay
+const instance = new Razorpay({
+    key_id:process.env.RAZORPAY_KEY_ID,
+    key_secret:process.env.RAZORPAY_KEY_SECRET
+  });
+    //create an order instance
+    const options = {
+        amount:amount*100,  // amount in the smallest currency unit
+        currency: "INR",
+        receipt: "order_rcptid_11"
+      };
+      const orderInfo = await instance.orders.create(options);
+      res.status(200).json({orderInfo})
+}
+//for payment verification
+const paymentVerification= async(req,res)=>{
+    ///it accept the razorpay order id and razorpay payment id and create a signature
+    const {razorpay_order_id,razorpay_payment_id,razorpay_signature}=req.body
+    let body=razorpay_order_id + "|" + razorpay_payment_id;
+    const expectedSignature = crypto.createHmac('sha256', process.env.RAZORPAY_KEY_SECRET)
+                                    .update(body.toString())
+                                    .digest('hex');
+    //it match the expecetd signature and razorpay signature
+    const isPayment = expectedSignature ===razorpay_signature;
+    if(isPayment){
+        //save the order details in database
+        const order = new Orders({
+            OrderID:razorpay_order_id,
+            PaymentID:razorpay_payment_id
+        })
+        await order.save();
+        res.redirect(`${process.env.BASE_URL}/confirmorder`);
+        res.send(req.body);
+    }else{
+        res.send("payment failure");
+    }
+}
+
+//get order info
+
+const getOrderInfo= async(req,res)=>{
+    res.send({"item":"hi"});
+} 
+
 //export the controller
-module.exports = { getAllProduct, registeredUser,loginUser,addWishlist,addToCart,getUserData,updateWishlist,updateBag,placedOrderBag,getSearchItem };
+module.exports = { getAllProduct, registeredUser,loginUser,addWishlist,addToCart,getUserData,updateWishlist,updateBag,placedOrderBag,getSearchItem,checkoutProduct,paymentVerification,getOrderInfo };

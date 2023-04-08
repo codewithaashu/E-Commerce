@@ -146,7 +146,7 @@ const Navbar = () => {
                     <Link
                       className="nav-link icon-box nav-hover"
                       aria-current="page"
-                      to={"/login"}
+                      
                     >
                       <i className="fa-regular fa-user"></i>
                       <span>Profile</span>

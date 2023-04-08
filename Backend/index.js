@@ -11,7 +11,8 @@ const productJSON = require("./products.json");
 //for sending data from backend to frontend we use cors
 //so we have to require cors
 const cors = require("cors");
-
+// //require the razorpay
+// const Razorpay = require("razorpay");
 //define the port
 const Port = process.env.PORT || 5000;
 
@@ -28,6 +29,13 @@ app.use(cors());
 //we use router so we have to import router
 const productRouter = require("./Router/index");
 app.use("/product",productRouter); //(router path,routerName) 
+
+
+// //create an instance of razorpay
+// const instance = new Razorpay({
+//     key_id:process.env.RAZORPAY_KEY_ID,
+//     key_secret:process.env.RAZORPAY_KEY_SECRET
+//   });
 
 //listen the request
 const start = async()=>{
@@ -47,3 +55,4 @@ const start = async()=>{
     }
 }
 start();
+// export default instance;
