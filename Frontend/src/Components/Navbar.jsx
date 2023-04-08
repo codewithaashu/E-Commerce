@@ -109,7 +109,7 @@ const Navbar = () => {
                       aria-current="page"
                       to={"/categories/kids"}
                     >
-                      Kids
+                      Kid
                     </Link>
                   </li>
                   <li className="nav-item">
