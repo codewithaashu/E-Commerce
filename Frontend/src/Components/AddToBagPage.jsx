@@ -15,6 +15,7 @@ const AddToBagPage = () => {
     return async () => {
       const user = await axios.get(`${BASE_URL}/product/user/?phone=${localStorage.getItem("phone")}`).catch((err) => { console.log("error is : " + err); })
       dispatch(setUser(user.data.user));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }
   }, [user.addToCartProduct.length]);
   const removeToBag = async (_id) => {
