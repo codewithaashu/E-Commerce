@@ -16,6 +16,7 @@ const ProductDetails = () => {
     return () => {
         dispatch(removeSelectedProduct());
     }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
 },[id])
   const fetchProductDetails = async () => {
     const apiData = await axios.get(`${BASE_URL}/product/?index=${id}`).catch((err) => console.log(err));

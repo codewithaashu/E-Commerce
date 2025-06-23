@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const ProductCard = ({ data }) => {
@@ -7,13 +6,13 @@ const ProductCard = ({ data }) => {
       {
 
         data.map((curr) => {
-          const {index,_id,searchImage,subTitle,discountedPrice,rating,ratingCount,brand,originalPrice,discountPercentage}=curr;
+          const {index,_id,searchImage,subTitle,discountedPrice,rating,ratingCount,brand,originalPrice}=curr;
           return (
             <div className="col card-box" key={_id}>
               <div className="card" style={{ width: "220px", maxHeight: "500px" }}>
                 <Link  to={`/products/${index}`} >
                   <div className="img-box">
-                    <img src={searchImage} className="card-img-top" alt="Shirt Photo" style={{ height: "280px", width: "100%" }} />
+                    <img src={searchImage} className="card-img-top" alt="Shirt" style={{ height: "280px", width: "100%" }} />
                     <div className="rating-box">
                       {rating.toFixed(1)} <span className="fa fa-star" style={{ color: "#15958E" }}></span> | <span>{ratingCount<1000?ratingCount:((ratingCount/1000).toFixed(1)+"K")}</span>
                     </div>

@@ -15,6 +15,7 @@ const ProductListing = () => {
       //api will called
       fetchData();
     }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   const fetchData = async () => {
     const apiData = await axios.get(`${BASE_URL}/product`).catch((err) => {
