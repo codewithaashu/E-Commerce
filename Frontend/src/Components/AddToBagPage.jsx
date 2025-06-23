@@ -17,7 +17,7 @@ const AddToBagPage = () => {
       dispatch(setUser(user.data.user));
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }
-  }, [user.addToCartProduct.length]);
+  }, [user.addToCartProduct.length,dispatch]);
   const removeToBag = async (_id) => {
     const res = await axios.post(`${BASE_URL}/product/removetoBag`, {
       _id: _id,
