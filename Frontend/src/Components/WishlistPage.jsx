@@ -28,7 +28,7 @@ const WishlistPage = () => {
         dispatch(setUser(user.data.user));
             // eslint-disable-next-line react-hooks/exhaustive-deps
       }
-    },[user.wishlistProduct.length])
+    },[user.wishlistProduct.length,dispatch])
     const removeToWishlist = async(_id)=>{
         const res = await axios.post(`${BASE_URL}//product/removetowishlist`,{
             _id:_id,
