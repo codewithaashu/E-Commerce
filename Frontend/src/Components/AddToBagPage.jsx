@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { setUser } from '../Redux/Action';
 import Swal from 'sweetalert2'
-import { BASE_URL,RAZORPAY_KEY_ID,RAZORPAY_KEY_SECRET } from '../Secret';
+import { BASE_URL } from '../Secret';
 import { useNavigate } from 'react-router';
 const AddToBagPage = () => {
   const user = useSelector((state) => state.setUserFunc.user);
