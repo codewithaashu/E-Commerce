@@ -18,6 +18,7 @@ const CategoryProduct = () => {
         return () => {
             dispatch(removeSelectedProduct());
         }
+          // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [category])
 
     const fetchCategoryData = async () => {
